@@ -1,0 +1,58 @@
+import{aQ as l,S as i,U as d,V as n,af as a,a9 as o,ad as s,aR as p,F as t}from"./framework-b1f2c84c.js";const r={},u=n("h2",{id:"前言",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#前言","aria-hidden":"true"},"#"),s(" 前言")],-1),k=n("p",null,"如果你需要模板的话，可以前往下载页下载",-1),v=p('<h2 id="了解音频包" tabindex="-1"><a class="header-anchor" href="#了解音频包" aria-hidden="true">#</a> 了解音频包</h2><p>什么是音频包？</p><p>正确的来说，没有<code>音频包</code>与<code>材质包</code>之分，因为都是同一个东西</p><p>但因为可能会有人只想改音频，不改材质，所以这个教程诞生了</p><p>在开始制作之前你可能还需要一些前置<code>工具</code>或<code>知识</code></p>',5),m=n("h2",{id:"准备",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#准备","aria-hidden":"true"},"#"),s(" 准备")],-1),b=n("p",null,[s("一个"),n("strong",null,"音频格式转换工具"),n("br"),s(" 这边推荐：")],-1),h=n("li",null,"格式工厂",-1),q={href:"https://convertio.co/zh/audio-converter/",target:"_blank",rel:"noopener noreferrer"},g=p(`<p>一个<strong>压缩包工具</strong><br> 随便一个就行</p><ol><li>bandzip</li><li>7zip</li><li>360压缩</li></ol><p>(可选)一个支持Json格式化的<strong>文本编辑器</strong><br> 这边推荐：</p><ol><li>Vscode</li><li>Typora</li></ol><h2 id="正文" tabindex="-1"><a class="header-anchor" href="#正文" aria-hidden="true">#</a> 正文</h2><h3 id="音频文件" tabindex="-1"><a class="header-anchor" href="#音频文件" aria-hidden="true">#</a> 音频文件</h3><p>格式：<code>*.ogg</code><br> 限制：最长支持8分钟的音频，但根据设备的不同，加载的时间也不同。</p><h3 id="开始制作" tabindex="-1"><a class="header-anchor" href="#开始制作" aria-hidden="true">#</a> 开始制作</h3><p>先把想播放的音频文件，转换成<code>ogg</code>格式</p><p>右键<code>音频包模板</code>，找到<code>解压</code>或者<code>解压到 音频包模板\\</code></p><p>打开<code>assets</code>=&gt;<code>minecraft</code>=&gt;<code>sounds</code>，将转换后的音频文件放入进去，如果你想要分类，可以创建新目录</p><p>返回到<code>minecraft</code>目录下，你会找到一个名为<code>sounds.json</code>的文件</p><p>打开它</p><h3 id="sounds-json" tabindex="-1"><a class="header-anchor" href="#sounds-json" aria-hidden="true">#</a> sounds.json</h3><p>你要在游戏内听到包中的音频，就必须做“映射”。</p><p>单个文件</p><div class="language-json line-numbers-mode" data-ext="json"><pre class="language-json"><code><span class="token punctuation">{</span>
+ <span class="token property">&quot;音频名&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 不要中文字符</span>
+    <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;播放源&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 写就record就行</span>
+    <span class="token property">&quot;sounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;文件名&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不要中文字符</span>
+        <span class="token property">&quot;stream&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">//这个不用管</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>多个文件</p><div class="language-json line-numbers-mode" data-ext="json"><pre class="language-json"><code><span class="token punctuation">{</span>
+ <span class="token property">&quot;音频名&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 不要中文字符</span>
+    <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;播放源&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 写就record就行</span>
+    <span class="token property">&quot;sounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;文件名&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不要中文字符</span>
+        <span class="token property">&quot;stream&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">//这个不用管</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;音频名2&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 不要中文字符</span>
+    <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;播放源&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 写就record就行</span>
+    <span class="token property">&quot;sounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;文件名2&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不要中文字符</span>
+        <span class="token property">&quot;stream&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">//这个不用管</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="举例" tabindex="-1"><a class="header-anchor" href="#举例" aria-hidden="true">#</a> 举例</h3><p>比如有一个音频文件叫<code>dada</code>，那么内容如下</p><div class="language-json line-numbers-mode" data-ext="json"><pre class="language-json"><code><span class="token punctuation">{</span>
+ <span class="token property">&quot;dada&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;record&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dada&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;stream&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">//这个不用管</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>其中的<code>dada</code>对应目录路径为：<code>assets</code>=&gt;<code>minecraft</code>=&gt;<code>sounds</code>内的名为<code>dada</code>的OGG音频文件</p><hr><p>比如你在sound目录内创建了个文件夹名为<code>music</code>，里面有一个音频文件叫<code>dada</code>，那么内容如下</p><div class="language-json line-numbers-mode" data-ext="json"><pre class="language-json"><code><span class="token punctuation">{</span>
+ <span class="token property">&quot;dada&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;record&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;music/dada&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;stream&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">//这个不用管</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>其中的<code>dada</code>对应目录路径为：<code>assets</code>=&gt;<code>minecraft</code>=&gt;<code>sounds</code>=&gt;<code>music</code>内的名为<code>dada</code>的OGG音频文件</p><h2 id="使用" tabindex="-1"><a class="header-anchor" href="#使用" aria-hidden="true">#</a> 使用</h2><p>将音频包放入<code>resourcepacks</code>目录中，在<code>游戏设置</code>=&gt;<code>资源包</code>=&gt;把<code>音频包启用</code>=&gt;<code>进入地图</code></p>`,29),_=n("code",null,"/playsound",-1),y=n("p",null,[s("用上方的"),n("code",null,"dada"),s("举例")],-1),f=n("p",null,[n("code",null,"/playsound data record @a ~ ~ ~ 100000")],-1);function x(j,E){const e=t("RouterLink"),c=t("ExternalLinkIcon");return i(),d("div",null,[u,k,n("p",null,[a(e,{to:"/download.html#%E9%9F%B3%E9%A2%91%E5%8C%85%E6%A8%A1%E6%9D%BF"},{default:o(()=>[s("[音频包模板]")]),_:1})]),v,n("p",null,[a(e,{to:"/MC1.12.2/command/senior.html#json%E6%A0%BC%E5%BC%8F"},{default:o(()=>[s("Json格式")]),_:1})]),m,b,n("ol",null,[h,n("li",null,[n("a",q,[s("convertio"),a(c)])])]),g,n("p",null,[s("使用指令"),a(e,{to:"/MC1.12.2/command/basic.html#playsound"},{default:o(()=>[_]),_:1})]),y,f])}const C=l(r,[["render",x],["__file","sound.html.vue"]]);export{C as default};

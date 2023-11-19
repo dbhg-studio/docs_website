@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="generator" content="VuePress 2.0.0-beta.61" />
+  <meta name="generator" content="DBHGAI" />
+  <meta name="theme" content="VuePress Theme Hope" />
+  <meta property="og:url" content="https://docs.dbhg.top/MC1.12.2/launcher/pcl2/use.html">
+  <meta property="og:site_name" content="蛋白后宫文档库">
+  <meta property="og:title" content="使用">
+  <meta property="og:description" content="使用 - PCL2启动器 | 蛋白后宫文档库">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh-CN">
+  <meta property="article:author" content="蛋白后宫">
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"使用","image":[""],"dateModified":null,"author":[{"@type":"Person","name":"蛋白后宫","url":"https://dbhg.top"}]}</script>
+  <link rel="icon" href="https://img.cdn.tencent-qq.cn/Yize/2023/05/6d19ed0008bb7ad9.png">
+  <title>使用 | 蛋白后宫文档库</title>
+  <meta name="description" content="使用 - PCL2启动器 | 蛋白后宫文档库">
+  <meta name="keywords"
+    content="蛋白后宫文档库, 蛋白后宫, 蛋白造图端, 1.12.2蛋白造图端, 使用文档, 文档, 主播蛋白, 蛋白佳丽后宫, 我的世界专区, 我的世界启动器, PCL2启动器, 使用">
+  <style>
+    :root {
+      --bg-color: #fff;
+    }
+
+    html[data-theme="dark"] {
+      --bg-color: #1d1e1f;
+    }
+
+    html,
+    body {
+      background: var(--bg-color);
+    }
+  </style>
+  <script>
+    const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+    const systemDarkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+  <link rel="preload" href="/assets/style-ed241763.css" as="style">
+  <link rel="stylesheet" href="/assets/style-ed241763.css">
+  <link rel="modulepreload" href="/assets/app-45d29361.js">
+  <link rel="modulepreload" href="/assets/framework-b1f2c84c.js">
+  <link rel="modulepreload" href="/assets/use.html-7b1e679b.js">
+  <link rel="modulepreload" href="/assets/use.html-8b58d160.js">
+  <link rel="prefetch" href="/assets/download.html-155c4c19.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-2b64a687.js" as="script">
+  <link rel="prefetch" href="/assets/tools.html-8607e852.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-f97ae0ba.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-70c819b2.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-2de63214.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-0344dbe0.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-21caff6b.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-bf2501b1.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-9ba2b1a7.js" as="script">
+  <link rel="prefetch" href="/assets/advanced.html-b837c5c9.js" as="script">
+  <link rel="prefetch" href="/assets/basic.html-58124957.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-23d0b810.js" as="script">
+  <link rel="prefetch" href="/assets/download.html-350438b7.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-234ced92.js" as="script">
+  <link rel="prefetch" href="/assets/install.html-4eb83fc1.js" as="script">
+  <link rel="prefetch" href="/assets/video.html-378666db.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-44b809d3.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-d7238b06.js" as="script">
+  <link rel="prefetch" href="/assets/sound.html-48fbf0f5.js" as="script">
+  <link rel="prefetch" href="/assets/textures.html-ed6e9cd2.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-3fc6b429.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-0e34ac9c.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-a2a9e5fe.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-51ebdced.js" as="script">
+  <link rel="prefetch" href="/assets/use.html-b9481405.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-5253ff82.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-e60fa580.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-397b56de.js" as="script">
+  <link rel="prefetch" href="/assets/404.html-440b565b.js" as="script">
+  <link rel="prefetch" href="/assets/download.html-ab274bf8.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-0f44345e.js" as="script">
+  <link rel="prefetch" href="/assets/tools.html-6fc76537.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-4f9c0030.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-d95e9b68.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-6b60d3c5.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-c79d66cb.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-68c9f946.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-ee437e13.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-4e490b76.js" as="script">
+  <link rel="prefetch" href="/assets/advanced.html-9785f617.js" as="script">
+  <link rel="prefetch" href="/assets/basic.html-19fa4472.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-5b44a3a4.js" as="script">
+  <link rel="prefetch" href="/assets/download.html-1a409031.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-7e0936c2.js" as="script">
+  <link rel="prefetch" href="/assets/install.html-f012919f.js" as="script">
+  <link rel="prefetch" href="/assets/video.html-1d034419.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-5aa3125d.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-1ca98a8d.js" as="script">
+  <link rel="prefetch" href="/assets/sound.html-f53ba229.js" as="script">
+  <link rel="prefetch" href="/assets/textures.html-fd592a54.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-5df4020c.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-b05da2e1.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-727a090c.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-5d6e45ad.js" as="script">
+  <link rel="prefetch" href="/assets/use.html-1d22abba.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-115800c3.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-a6f747ec.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-92a5ddf4.js" as="script">
+  <link rel="prefetch" href="/assets/404.html-f56d3e52.js" as="script">
+  <link rel="prefetch" href="/assets/auto-fa8841cf.js" as="script">
+  <link rel="prefetch" href="/assets/index-b03bef79.js" as="script">
+  <link rel="prefetch" href="/assets/flowchart-35969cab.js" as="script">
+  <link rel="prefetch" href="/assets/mermaid.core-744b56f6.js" as="script">
+  <link rel="prefetch" href="/assets/highlight.esm-75b11b9d.js" as="script">
+  <link rel="prefetch" href="/assets/markdown.esm-0191f9da.js" as="script">
+  <link rel="prefetch" href="/assets/math.esm-70a288c8.js" as="script">
+  <link rel="prefetch" href="/assets/notes.esm-a106bb2c.js" as="script">
+  <link rel="prefetch" href="/assets/reveal.esm-ab04f0b1.js" as="script">
+  <link rel="prefetch" href="/assets/search.esm-7e6792e2.js" as="script">
+  <link rel="prefetch" href="/assets/zoom.esm-b83b91d0.js" as="script">
+  <link rel="prefetch" href="/assets/VuePlayground-dfe1b1ac.js" as="script">
+  <link rel="prefetch" href="/assets/photoswipe.esm-36cd6c3c.js" as="script">
+</head>
+
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content"
+      class="skip-link sr-only">跳至主要內容</a><!--]-->
+    <div class="theme-container has-toc"><!--[-->
+      <header class="navbar" id="navbar">
+        <div class="navbar-start"><button type="button" class="toggle-sidebar-button" title="Toggle Sidebar"><span
+              class="icon"></span></button><!--[--><!----><!--]--><!--[--><a href="/" class="brand"><img class="logo"
+              src="https://img.cdn.tencent-qq.cn/Yize/2023/05/6d19ed0008bb7ad9.png" alt="蛋白后宫文档库"><!----><span
+              class="site-name hide-in-pad">蛋白后宫文档库</span></a><!--]--><!--[--><!----><!--]--></div>
+        <div class="navbar-center"><!--[--><!----><!--]--><!--[-->
+          <nav class="nav-links">
+            <div class="nav-item hide-in-mobile"><a href="/" class="nav-link" aria-label="主页"><iconify-icon
+                  class="font-icon icon" style="" mode="style" inline icon="mdi:home" width="1em"
+                  height="1em"></iconify-icon>主页<!----></a></div>
+            <div class="nav-item hide-in-mobile">
+              <div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="我的世界"><span
+                    class="title"><iconify-icon class="font-icon icon" style="" mode="style" inline icon="mdi:minecraft"
+                      width="1em" height="1em"></iconify-icon>我的世界</span><span class="arrow"></span>
+                  <ul class="nav-dropdown">
+                    <li class="dropdown-item"><a href="/MC1.12.2/client/" class="nav-link"
+                        aria-label="1.12.2蛋白造图客户端"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                          icon="mdi:minecraft" width="1em" height="1em"></iconify-icon>1.12.2蛋白造图客户端<!----></a></li>
+                    <li class="dropdown-item"><a href="/MC1.12.2/command/" class="nav-link"
+                        aria-label="1.12.2指令集"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                          icon="clarity:command-line" width="1em" height="1em"></iconify-icon>1.12.2指令集<!----></a></li>
+                    <li class="dropdown-item"><a href="/MC1.12.2/pack/" class="nav-link"
+                        aria-label="1.12.2资源包"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                          icon="tabler:packge-import" width="1em" height="1em"></iconify-icon>1.12.2资源包<!----></a></li>
+                    <li class="dropdown-item">
+                      <h4 class="dropdown-subtitle"><a href="/MC1.12.2/launcher/" class="nav-link active"
+                          aria-label="我的世界启动器"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                            icon="arcticons:game-launcher" width="1em" height="1em"></iconify-icon>我的世界启动器<!----></a>
+                      </h4>
+                      <ul class="dropdown-subitem-wrapper">
+                        <li class="dropdown-subitem"><a href="/MC1.12.2/launcher/hmcl/" class="nav-link"
+                            aria-label="HMCL启动器"><!---->HMCL启动器<!----></a></li>
+                        <li class="dropdown-subitem"><a href="/MC1.12.2/launcher/pcl2/" class="nav-link active"
+                            aria-label="PCL2启动器"><!---->PCL2启动器<!----></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </button></div>
+            </div>
+            <div class="nav-item hide-in-mobile"><a href="/download.html" class="nav-link" aria-label="下载"><iconify-icon
+                  class="font-icon icon" style="" mode="style" inline icon="material-symbols:download" width="1em"
+                  height="1em"></iconify-icon>下载<!----></a></div>
+            <div class="nav-item hide-in-mobile"><a href="/tools.html" class="nav-link" aria-label="工具"><iconify-icon
+                  class="font-icon icon" style="" mode="style" inline icon="mdi:tools" width="1em"
+                  height="1em"></iconify-icon>工具<!----></a></div>
+            <div class="nav-item hide-in-mobile"><a href="https://douyu.com/762505" rel="noopener noreferrer"
+                target="_blank" aria-label="蛋白直播间" class="nav-link"><iconify-icon class="font-icon icon" style=""
+                  mode="style" inline icon="material-symbols:link" width="1em"
+                  height="1em"></iconify-icon>蛋白直播间<span><svg class="external-link-icon"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                    viewBox="0 0 100 100" width="15" height="15">
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></div>
+          </nav><!--]--><!--[--><!----><!--]-->
+        </div>
+        <div class="navbar-end"><!--[--><!----><!--]--><!--[--><!----><!---->
+          <div class="nav-item hide-in-mobile"><button type="button" id="appearance-switch"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor"
+                aria-label="auto icon" style="display:block;">
+                <path
+                  d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z">
+                </path>
+              </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024"
+                fill="currentColor" aria-label="dark icon" style="display:none;">
+                <path
+                  d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z">
+                </path>
+              </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024"
+                fill="currentColor" aria-label="light icon" style="display:none;">
+                <path
+                  d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z">
+                </path>
+              </svg></button></div><!----><!--]--><!--[--><!----><!--]--><button type="button"
+            class="toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false"
+            aria-controls="nav-screen"><span class="button-container"><span class="button-top"></span><span
+                class="button-middle"></span><span class="button-bottom"></span></span></button>
+        </div>
+      </header><!----><!--]--><!---->
+      <div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div>
+      <aside class="sidebar" id="sidebar"><!--[--><!----><!--]-->
+        <ul class="sidebar-links">
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#添加账户"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="添加账户"><!---->添加账户<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#游戏目录"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="游戏目录"><!---->游戏目录<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#游戏设置"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="游戏设置"><!---->游戏设置<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#启动游戏"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="启动游戏"><!---->启动游戏<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+        </ul><!--[--><!----><!--]-->
+      </aside><!--[-->
+      <main class="page" id="main-content"><!--[--><!----><!---->
+        <nav class="breadcrumb disable"></nav>
+        <div class="page-title">
+          <h1><iconify-icon class="font-icon icon" style="" mode="style" inline
+              icon="material-symbols:energy-program-time-used" width="1em" height="1em"></iconify-icon>使用</h1>
+          <div class="page-info"><span class="page-author-info" aria-label="作者🖊" data-balloon-pos="down"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon author-icon" viewBox="0 0 1024 1024" fill="currentColor"
+                aria-label="author icon">
+                <path
+                  d="M649.6 633.6c86.4-48 147.2-144 147.2-249.6 0-160-128-288-288-288s-288 128-288 288c0 108.8 57.6 201.6 147.2 249.6-121.6 48-214.4 153.6-240 288-3.2 9.6 0 19.2 6.4 25.6 3.2 9.6 12.8 12.8 22.4 12.8h704c9.6 0 19.2-3.2 25.6-12.8 6.4-6.4 9.6-16 6.4-25.6-25.6-134.4-121.6-240-243.2-288z">
+                </path>
+              </svg><span><a class="page-author-item" href="https://dbhg.top" target="_blank"
+                  rel="noopener noreferrer">蛋白后宫</a></span><span property="author"
+                content="蛋白后宫"></span></span><!----><!----><!----><span class="page-reading-time-info"
+              aria-label="阅读时间⌛" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon"
+                viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon">
+                <path
+                  d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z">
+                </path>
+              </svg><span>大约 1 分钟</span>
+              <meta property="timeRequired" content="PT1M">
+            </span><!----><!----></div>
+          <hr>
+        </div>
+        <div class="toc-place-holder">
+          <aside id="toc"><!--[--><!----><!--]-->
+            <div class="toc-header">此页内容<button type="button" class="print-button" title="打印"><svg
+                  xmlns="http://www.w3.org/2000/svg" class="icon print-icon" viewBox="0 0 1024 1024" fill="currentColor"
+                  aria-label="print icon">
+                  <path
+                    d="M819.2 364.8h-44.8V128c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v236.8h-44.8C145.067 364.8 96 413.867 96 473.6v192c0 59.733 49.067 108.8 108.8 108.8h44.8V896c0 17.067 14.933 32 32 32h460.8c17.067 0 32-14.933 32-32V774.4h44.8c59.733 0 108.8-49.067 108.8-108.8v-192c0-59.733-49.067-108.8-108.8-108.8zM313.6 160h396.8v204.8H313.6V160zm396.8 704H313.6V620.8h396.8V864zM864 665.6c0 25.6-19.2 44.8-44.8 44.8h-44.8V588.8c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v121.6h-44.8c-25.6 0-44.8-19.2-44.8-44.8v-192c0-25.6 19.2-44.8 44.8-44.8h614.4c25.6 0 44.8 19.2 44.8 44.8v192z">
+                  </path>
+                </svg></button></div>
+            <div class="toc-wrapper">
+              <ul class="toc-list"><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#添加账户"
+                    class="router-link-active router-link-exact-active toc-link level2">添加账户</a></li>
+                <!----><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#游戏目录"
+                    class="router-link-active router-link-exact-active toc-link level2">游戏目录</a></li>
+                <!----><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#游戏设置"
+                    class="router-link-active router-link-exact-active toc-link level2">游戏设置</a></li>
+                <!----><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/launcher/pcl2/use.html#启动游戏"
+                    class="router-link-active router-link-exact-active toc-link level2">启动游戏</a></li><!----><!--]-->
+              </ul>
+              <div class="toc-marker" style="top:-1.7rem;"></div>
+            </div><!--[--><!----><!--]-->
+          </aside>
+        </div><!---->
+        <div class="theme-hope-content">
+          <h2 id="添加账户" tabindex="-1"><a class="header-anchor" href="#添加账户" aria-hidden="true">#</a> 添加账户</h2>
+          <p>在启动器主界面左边</p>
+          <table>
+            <thead>
+              <tr>
+                <th>名称</th>
+                <th>描述</th>
+                <th>优点</th>
+                <th>缺点</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>离线</td>
+                <td>本地账号</td>
+                <td>无需购买</td>
+                <td>没有皮肤</td>
+              </tr>
+              <tr>
+                <td>微软</td>
+                <td>正版账号</td>
+                <td>有皮肤，可玩正版服务器</td>
+                <td>需花费87块RMB购买</td>
+              </tr>
+              <tr>
+                <td><s>Mojang</s></td>
+                <td>原正版账号，现已转为[微软账号]</td>
+                <td>有皮肤，可玩正版服务器</td>
+                <td>需花费163块RMB购买</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><a href="https://www.minecraft.net/zh-hans" target="_blank" rel="noopener noreferrer">我的世界官网<span><svg
+                  class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                  x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p>
+          <h2 id="游戏目录" tabindex="-1"><a class="header-anchor" href="#游戏目录" aria-hidden="true">#</a> 游戏目录</h2>
+          <p>在启动器主页面左边，点击左下的【版本选择】进入</p>
+          <p>添加或导入中，选择第一项【添加已有文件夹】</p>
+          <p>在弹出的窗口里，选择【游戏根目录】（.minecraft）</p>
+          <h2 id="游戏设置" tabindex="-1"><a class="header-anchor" href="#游戏设置" aria-hidden="true">#</a> 游戏设置</h2>
+          <p>在启动器主页面左边，点击右下的【版本选择】进入</p>
+          <p>点击【设置】</p>
+          <table>
+            <thead>
+              <tr>
+                <th>名称</th>
+                <th>描述</th>
+                <th>作用</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>游戏Java</td>
+                <td>Java所在位置</td>
+                <td>设置Java所在位置，会自动寻找</td>
+              </tr>
+              <tr>
+                <td>版本隔离</td>
+                <td>版本隔离</td>
+                <td>把当前游戏目录下多个游戏版本，分开存放</td>
+              </tr>
+              <tr>
+                <td>游戏内存</td>
+                <td>游戏可使用的内存</td>
+                <td>设置游戏可使用的内存，根据实际内存大小，微调，越大越好，⚠但不要超出总内存</td>
+              </tr>
+              <tr>
+                <td>文件校验</td>
+                <td>启用或禁用文件校验</td>
+                <td>关闭该选项后，启动游戏时会跳过校验文件完整性，直接启动，反之（一般情况下不要动它）。</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 id="启动游戏" tabindex="-1"><a class="header-anchor" href="#启动游戏" aria-hidden="true">#</a> 启动游戏</h2>
+          <p>在启动器主页面左边，点击【启动游戏】即可</p>
+        </div><!---->
+        <footer class="page-meta"><!---->
+          <div class="meta-item git-info"><!----><!----></div>
+        </footer><!----><!----><!----><!--]-->
+      </main><!--]-->
+      <footer class="footer-wrapper">
+        <div class="footer">© <a href="https://dbhg.top" target="_blank">蛋白后宫制图团</a> | By <a href="https://alwolf.cn"
+            target="_blank">一只屑阿狼</a></div>
+        <div class="copyright">Apache 2.0 协议, 版权所有</div>
+      </footer>
+    </div><!--]--><!----><!--]-->
+  </div>
+  <script type="module" src="/assets/app-45d29361.js" defer></script>
+</body>
+
+</html>

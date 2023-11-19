@@ -1,0 +1,1 @@
+import{aQ as t,S as n,U as o,af as s,a9 as a,F as c,V as r}from"./framework-b1f2c84c.js";const _={},l=r("h1",null,"持续更新中，敬请期待...",-1);function u(f,d){const e=c("center");return n(),o("div",null,[s(e,null,{default:a(()=>[l]),_:1})])}const i=t(_,[["render",u],["__file","textures.html.vue"]]);export{i as default};

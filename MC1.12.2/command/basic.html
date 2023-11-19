@@ -1,0 +1,2933 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="generator" content="VuePress 2.0.0-beta.61" />
+    <meta name="generator" content="DBHGAI" />
+  <meta name="theme" content="VuePress Theme Hope" />
+  <meta property="og:url" content="https://docs.dbhg.top/MC1.12.2/command/basic.html">
+  <meta property="og:site_name" content="蛋白后宫文档库">
+  <meta property="og:title" content="基础">
+  <meta property="og:description" content="基础 - 1.12.2指令集 | 蛋白后宫文档库">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh-CN">
+  <meta property="article:author" content="蛋白后宫">
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"基础","image":[""],"dateModified":null,"author":[{"@type":"Person","name":"蛋白后宫","url":"https://dbhg.top"}]}</script>
+  <link rel="icon" href="https://img.cdn.tencent-qq.cn/Yize/2023/05/6d19ed0008bb7ad9.png">
+  <title>基础 | 蛋白后宫文档库</title>
+  <meta name="description" content="基础 - 1.12.2指令集 | 蛋白后宫文档库">
+  <meta name="keywords"
+    content="蛋白后宫文档库, 蛋白后宫, 蛋白造图端, 1.12.2蛋白造图端, 使用文档, 文档, 主播蛋白, 蛋白佳丽后宫, 我的世界专区, 我的世界启动器, 1.12.2指令集, 基础">
+  <style>
+    :root {
+      --bg-color: #fff;
+    }
+
+    html[data-theme="dark"] {
+      --bg-color: #1d1e1f;
+    }
+
+    html,
+    body {
+      background: var(--bg-color);
+    }
+  </style>
+  <script>
+    const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+    const systemDarkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+  <link rel="preload" href="/assets/style-ed241763.css" as="style">
+  <link rel="stylesheet" href="/assets/style-ed241763.css">
+  <link rel="modulepreload" href="/assets/app-45d29361.js">
+  <link rel="modulepreload" href="/assets/framework-b1f2c84c.js">
+  <link rel="modulepreload" href="/assets/basic.html-19fa4472.js">
+  <link rel="modulepreload" href="/assets/basic.html-58124957.js">
+  <link rel="prefetch" href="/assets/download.html-155c4c19.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-2b64a687.js" as="script">
+  <link rel="prefetch" href="/assets/tools.html-8607e852.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-f97ae0ba.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-70c819b2.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-2de63214.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-0344dbe0.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-21caff6b.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-bf2501b1.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-9ba2b1a7.js" as="script">
+  <link rel="prefetch" href="/assets/advanced.html-b837c5c9.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-23d0b810.js" as="script">
+  <link rel="prefetch" href="/assets/download.html-350438b7.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-234ced92.js" as="script">
+  <link rel="prefetch" href="/assets/install.html-4eb83fc1.js" as="script">
+  <link rel="prefetch" href="/assets/video.html-378666db.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-44b809d3.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-d7238b06.js" as="script">
+  <link rel="prefetch" href="/assets/sound.html-48fbf0f5.js" as="script">
+  <link rel="prefetch" href="/assets/textures.html-ed6e9cd2.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-3fc6b429.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-0e34ac9c.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-a2a9e5fe.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-51ebdced.js" as="script">
+  <link rel="prefetch" href="/assets/use.html-b9481405.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-5253ff82.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-e60fa580.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-397b56de.js" as="script">
+  <link rel="prefetch" href="/assets/use.html-7b1e679b.js" as="script">
+  <link rel="prefetch" href="/assets/404.html-440b565b.js" as="script">
+  <link rel="prefetch" href="/assets/download.html-ab274bf8.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-0f44345e.js" as="script">
+  <link rel="prefetch" href="/assets/tools.html-6fc76537.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-4f9c0030.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-d95e9b68.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-6b60d3c5.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-c79d66cb.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-68c9f946.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-ee437e13.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-4e490b76.js" as="script">
+  <link rel="prefetch" href="/assets/advanced.html-9785f617.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-5b44a3a4.js" as="script">
+  <link rel="prefetch" href="/assets/download.html-1a409031.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-7e0936c2.js" as="script">
+  <link rel="prefetch" href="/assets/install.html-f012919f.js" as="script">
+  <link rel="prefetch" href="/assets/video.html-1d034419.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-5aa3125d.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-1ca98a8d.js" as="script">
+  <link rel="prefetch" href="/assets/sound.html-f53ba229.js" as="script">
+  <link rel="prefetch" href="/assets/textures.html-fd592a54.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-5df4020c.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-b05da2e1.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-727a090c.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-5d6e45ad.js" as="script">
+  <link rel="prefetch" href="/assets/use.html-1d22abba.js" as="script">
+  <link rel="prefetch" href="/assets/faq.html-115800c3.js" as="script">
+  <link rel="prefetch" href="/assets/index.html-a6f747ec.js" as="script">
+  <link rel="prefetch" href="/assets/quickstart.html-92a5ddf4.js" as="script">
+  <link rel="prefetch" href="/assets/use.html-8b58d160.js" as="script">
+  <link rel="prefetch" href="/assets/404.html-f56d3e52.js" as="script">
+  <link rel="prefetch" href="/assets/auto-fa8841cf.js" as="script">
+  <link rel="prefetch" href="/assets/index-b03bef79.js" as="script">
+  <link rel="prefetch" href="/assets/flowchart-35969cab.js" as="script">
+  <link rel="prefetch" href="/assets/mermaid.core-744b56f6.js" as="script">
+  <link rel="prefetch" href="/assets/highlight.esm-75b11b9d.js" as="script">
+  <link rel="prefetch" href="/assets/markdown.esm-0191f9da.js" as="script">
+  <link rel="prefetch" href="/assets/math.esm-70a288c8.js" as="script">
+  <link rel="prefetch" href="/assets/notes.esm-a106bb2c.js" as="script">
+  <link rel="prefetch" href="/assets/reveal.esm-ab04f0b1.js" as="script">
+  <link rel="prefetch" href="/assets/search.esm-7e6792e2.js" as="script">
+  <link rel="prefetch" href="/assets/zoom.esm-b83b91d0.js" as="script">
+  <link rel="prefetch" href="/assets/VuePlayground-dfe1b1ac.js" as="script">
+  <link rel="prefetch" href="/assets/photoswipe.esm-36cd6c3c.js" as="script">
+</head>
+
+<body>
+  <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content"
+      class="skip-link sr-only">跳至主要內容</a><!--]-->
+    <div class="theme-container has-toc"><!--[-->
+      <header class="navbar" id="navbar">
+        <div class="navbar-start"><button type="button" class="toggle-sidebar-button" title="Toggle Sidebar"><span
+              class="icon"></span></button><!--[--><!----><!--]--><!--[--><a href="/" class="brand"><img class="logo"
+              src="https://img.cdn.tencent-qq.cn/Yize/2023/05/6d19ed0008bb7ad9.png" alt="蛋白后宫文档库"><!----><span
+              class="site-name hide-in-pad">蛋白后宫文档库</span></a><!--]--><!--[--><!----><!--]--></div>
+        <div class="navbar-center"><!--[--><!----><!--]--><!--[-->
+          <nav class="nav-links">
+            <div class="nav-item hide-in-mobile"><a href="/" class="nav-link" aria-label="主页"><iconify-icon
+                  class="font-icon icon" style="" mode="style" inline icon="mdi:home" width="1em"
+                  height="1em"></iconify-icon>主页<!----></a></div>
+            <div class="nav-item hide-in-mobile">
+              <div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="我的世界"><span
+                    class="title"><iconify-icon class="font-icon icon" style="" mode="style" inline icon="mdi:minecraft"
+                      width="1em" height="1em"></iconify-icon>我的世界</span><span class="arrow"></span>
+                  <ul class="nav-dropdown">
+                    <li class="dropdown-item"><a href="/MC1.12.2/client/" class="nav-link"
+                        aria-label="1.12.2蛋白造图客户端"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                          icon="mdi:minecraft" width="1em" height="1em"></iconify-icon>1.12.2蛋白造图客户端<!----></a></li>
+                    <li class="dropdown-item"><a href="/MC1.12.2/command/" class="nav-link"
+                        aria-label="1.12.2指令集"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                          icon="clarity:command-line" width="1em" height="1em"></iconify-icon>1.12.2指令集<!----></a></li>
+                    <li class="dropdown-item"><a href="/MC1.12.2/pack/" class="nav-link"
+                        aria-label="1.12.2资源包"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                          icon="tabler:packge-import" width="1em" height="1em"></iconify-icon>1.12.2资源包<!----></a></li>
+                    <li class="dropdown-item">
+                      <h4 class="dropdown-subtitle"><a href="/MC1.12.2/launcher/" class="nav-link"
+                          aria-label="我的世界启动器"><iconify-icon class="font-icon icon" style="" mode="style" inline
+                            icon="arcticons:game-launcher" width="1em" height="1em"></iconify-icon>我的世界启动器<!----></a>
+                      </h4>
+                      <ul class="dropdown-subitem-wrapper">
+                        <li class="dropdown-subitem"><a href="/MC1.12.2/launcher/hmcl/" class="nav-link"
+                            aria-label="HMCL启动器"><!---->HMCL启动器<!----></a></li>
+                        <li class="dropdown-subitem"><a href="/MC1.12.2/launcher/pcl2/" class="nav-link"
+                            aria-label="PCL2启动器"><!---->PCL2启动器<!----></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </button></div>
+            </div>
+            <div class="nav-item hide-in-mobile"><a href="/download.html" class="nav-link" aria-label="下载"><iconify-icon
+                  class="font-icon icon" style="" mode="style" inline icon="material-symbols:download" width="1em"
+                  height="1em"></iconify-icon>下载<!----></a></div>
+            <div class="nav-item hide-in-mobile"><a href="/tools.html" class="nav-link" aria-label="工具"><iconify-icon
+                  class="font-icon icon" style="" mode="style" inline icon="mdi:tools" width="1em"
+                  height="1em"></iconify-icon>工具<!----></a></div>
+            <div class="nav-item hide-in-mobile"><a href="https://douyu.com/762505" rel="noopener noreferrer"
+                target="_blank" aria-label="蛋白直播间" class="nav-link"><iconify-icon class="font-icon icon" style=""
+                  mode="style" inline icon="material-symbols:link" width="1em"
+                  height="1em"></iconify-icon>蛋白直播间<span><svg class="external-link-icon"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                    viewBox="0 0 100 100" width="15" height="15">
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></div>
+          </nav><!--]--><!--[--><!----><!--]-->
+        </div>
+        <div class="navbar-end"><!--[--><!----><!--]--><!--[--><!----><!---->
+          <div class="nav-item hide-in-mobile"><button type="button" id="appearance-switch"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor"
+                aria-label="auto icon" style="display:block;">
+                <path
+                  d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z">
+                </path>
+              </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024"
+                fill="currentColor" aria-label="dark icon" style="display:none;">
+                <path
+                  d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z">
+                </path>
+              </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024"
+                fill="currentColor" aria-label="light icon" style="display:none;">
+                <path
+                  d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z">
+                </path>
+              </svg></button></div><!----><!--]--><!--[--><!----><!--]--><button type="button"
+            class="toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false"
+            aria-controls="nav-screen"><span class="button-container"><span class="button-top"></span><span
+                class="button-middle"></span><span class="button-bottom"></span></span></button>
+        </div>
+      </header><!----><!--]--><!---->
+      <div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div>
+      <aside class="sidebar" id="sidebar"><!--[--><!----><!--]-->
+        <ul class="sidebar-links">
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#nbt"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="NBT"><!---->NBT<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#json"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="Json"><!---->Json<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#目标选择器"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="目标选择器"><!---->目标选择器<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#前言"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="前言"><!---->前言<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#介绍"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="介绍"><!---->介绍<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#坐标"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="坐标"><!---->坐标<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#查看"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="查看"><!---->查看<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#数据类型"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="数据类型"><!---->数据类型<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#advancement"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/advancement"><!---->/advancement<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#clear"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/clear"><!---->/clear<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-3"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名称解释"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名称解释"><!---->名称解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#clone"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/clone"><!---->/clone<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-4"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-3"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#difficulty"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/difficulty"><!---->/difficulty<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-3"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-5"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-3"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-4"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-3"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#effect"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/effect"><!---->/effect<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-4"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-6"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-4"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-5"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#enchant"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/enchant"><!---->/enchant<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-5"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-7"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-5"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-6"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#fill"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/fill"><!---->/fill<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-6"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-8"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-6"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-7"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#gamemode"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/gamemode"><!---->/gamemode<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#介绍-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="介绍"><!---->介绍<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-9"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-7"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-8"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#defaultgamemode"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/defaultgamemode"><!---->/defaultgamemode<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#介绍-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="介绍"><!---->介绍<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-10"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-8"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-9"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#gamerule"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/gamerule"><!---->/gamerule<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-7"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-11"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-9"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-10"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#give"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/give"><!---->/give<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-8"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-12"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-10"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-11"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#help"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/help"><!---->/help<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-9"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-13"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-12"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#kill"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/kill"><!---->/kill<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-10"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-14"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-13"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#playsound"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/playsound"><!---->/playsound<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-11"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-15"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-11"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-14"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-4"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#stopsound"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/stopsound"><!---->/stopsound<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-12"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-16"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-15"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#say"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/say"><!---->/say<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-13"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-17"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-16"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#scoreboard"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/scoreboard"><!---->/scoreboard<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#前言-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="前言"><!---->前言<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令展示"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令展示"><!---->命令展示<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#setblock"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/setblock"><!---->/setblock<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-14"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-18"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名称解释-1"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名称解释"><!---->名称解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-17"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#summon"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/summon"><!---->/summon<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-15"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-19"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-12"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-18"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#setworldspawn"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/setworldspawn"><!---->/setworldspawn<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-16"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-20"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-19"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-5"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#spawnpoint"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/spawnpoint"><!---->/spawnpoint<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-17"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-21"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-20"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-6"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#spreadplayers"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/spreadplayers"><!---->/spreadplayers<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-18"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-22"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-13"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-21"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#time"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/time"><!---->/time<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-19"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-23"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-14"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-22"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#tp"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/tp"><!---->/tp<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-20"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-24"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-15"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-23"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#weather"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/weather"><!---->/weather<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-21"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-25"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名称解释-2"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名称解释"><!---->名称解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-24"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#worldborder"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/worldborder"><!---->/worldborder<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-22"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-26"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-16"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-25"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#xp"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="/xp"><!---->/xp<!----></a>
+            <ul class="sidebar-sub-headers">
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-23"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令解释"><!---->命令解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-27"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="语法"><!---->语法<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-17"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="名词解释"><!---->名词解释<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-26"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="命令举例"><!---->命令举例<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+              <li class="sidebar-sub-header"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-7"
+                  class="router-link-active router-link-exact-active nav-link sidebar-link heading"
+                  aria-label="小知识"><!---->小知识<!----></a>
+                <ul class="sidebar-sub-headers"></ul>
+              </li>
+            </ul><!--]-->
+          </li>
+          <li><!--[--><a aria-current="page" href="/MC1.12.2/command/basic.html#进阶"
+              class="router-link-active router-link-exact-active nav-link sidebar-link sidebar-heading"
+              aria-label="进阶"><!---->进阶<!----></a>
+            <ul class="sidebar-sub-headers"></ul><!--]-->
+          </li>
+        </ul><!--[--><!----><!--]-->
+      </aside><!--[-->
+      <main class="page" id="main-content"><!--[--><!----><!---->
+        <nav class="breadcrumb disable"></nav>
+        <div class="page-title">
+          <h1><!---->基础</h1>
+          <div class="page-info"><span class="page-author-info" aria-label="作者🖊" data-balloon-pos="down"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon author-icon" viewBox="0 0 1024 1024" fill="currentColor"
+                aria-label="author icon">
+                <path
+                  d="M649.6 633.6c86.4-48 147.2-144 147.2-249.6 0-160-128-288-288-288s-288 128-288 288c0 108.8 57.6 201.6 147.2 249.6-121.6 48-214.4 153.6-240 288-3.2 9.6 0 19.2 6.4 25.6 3.2 9.6 12.8 12.8 22.4 12.8h704c9.6 0 19.2-3.2 25.6-12.8 6.4-6.4 9.6-16 6.4-25.6-25.6-134.4-121.6-240-243.2-288z">
+                </path>
+              </svg><span><a class="page-author-item" href="https://dbhg.top" target="_blank"
+                  rel="noopener noreferrer">蛋白后宫</a></span><span property="author"
+                content="蛋白后宫"></span></span><!----><!----><!----><span class="page-reading-time-info"
+              aria-label="阅读时间⌛" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon"
+                viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon">
+                <path
+                  d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z">
+                </path>
+              </svg><span>大约 16 分钟</span>
+              <meta property="timeRequired" content="PT16M">
+            </span><!----><!----></div>
+          <hr>
+        </div>
+        <div class="toc-place-holder">
+          <aside id="toc"><!--[--><!----><!--]-->
+            <div class="toc-header">此页内容<button type="button" class="print-button" title="打印"><svg
+                  xmlns="http://www.w3.org/2000/svg" class="icon print-icon" viewBox="0 0 1024 1024" fill="currentColor"
+                  aria-label="print icon">
+                  <path
+                    d="M819.2 364.8h-44.8V128c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v236.8h-44.8C145.067 364.8 96 413.867 96 473.6v192c0 59.733 49.067 108.8 108.8 108.8h44.8V896c0 17.067 14.933 32 32 32h460.8c17.067 0 32-14.933 32-32V774.4h44.8c59.733 0 108.8-49.067 108.8-108.8v-192c0-59.733-49.067-108.8-108.8-108.8zM313.6 160h396.8v204.8H313.6V160zm396.8 704H313.6V620.8h396.8V864zM864 665.6c0 25.6-19.2 44.8-44.8 44.8h-44.8V588.8c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v121.6h-44.8c-25.6 0-44.8-19.2-44.8-44.8v-192c0-25.6 19.2-44.8 44.8-44.8h614.4c25.6 0 44.8 19.2 44.8 44.8v192z">
+                  </path>
+                </svg></button></div>
+            <div class="toc-wrapper">
+              <ul class="toc-list"><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#nbt"
+                    class="router-link-active router-link-exact-active toc-link level2">NBT</a></li>
+                <!----><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#json"
+                    class="router-link-active router-link-exact-active toc-link level2">Json</a></li>
+                <!----><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#目标选择器"
+                    class="router-link-active router-link-exact-active toc-link level2">目标选择器</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#前言"
+                        class="router-link-active router-link-exact-active toc-link level3">前言</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#介绍"
+                        class="router-link-active router-link-exact-active toc-link level3">介绍</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#坐标"
+                    class="router-link-active router-link-exact-active toc-link level2">坐标</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#查看"
+                        class="router-link-active router-link-exact-active toc-link level3">查看</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#数据类型"
+                        class="router-link-active router-link-exact-active toc-link level3">数据类型</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-1"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#advancement"
+                    class="router-link-active router-link-exact-active toc-link level2">/advancement</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-2"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-1"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-1"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#clear"
+                    class="router-link-active router-link-exact-active toc-link level2">/clear</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-1"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-3"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名称解释"
+                        class="router-link-active router-link-exact-active toc-link level3">名称解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-2"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-1"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#clone"
+                    class="router-link-active router-link-exact-active toc-link level2">/clone</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-2"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-4"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-2"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-3"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-2"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#difficulty"
+                    class="router-link-active router-link-exact-active toc-link level2">/difficulty</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-3"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-5"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-3"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-4"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-3"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#effect"
+                    class="router-link-active router-link-exact-active toc-link level2">/effect</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-4"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-6"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-4"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-5"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#enchant"
+                    class="router-link-active router-link-exact-active toc-link level2">/enchant</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-5"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-7"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-5"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-6"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#fill"
+                    class="router-link-active router-link-exact-active toc-link level2">/fill</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-6"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-8"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-6"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-7"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#gamemode"
+                    class="router-link-active router-link-exact-active toc-link level2">/gamemode</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#介绍-1"
+                        class="router-link-active router-link-exact-active toc-link level3">介绍</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-9"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-7"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-8"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#defaultgamemode"
+                    class="router-link-active router-link-exact-active toc-link level2">/defaultgamemode</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#介绍-2"
+                        class="router-link-active router-link-exact-active toc-link level3">介绍</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-10"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-8"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-9"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#gamerule"
+                    class="router-link-active router-link-exact-active toc-link level2">/gamerule</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-7"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-11"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-9"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-10"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#give"
+                    class="router-link-active router-link-exact-active toc-link level2">/give</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-8"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-12"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-10"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-11"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#help"
+                    class="router-link-active router-link-exact-active toc-link level2">/help</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-9"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-13"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-12"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#kill"
+                    class="router-link-active router-link-exact-active toc-link level2">/kill</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-10"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-14"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-13"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#playsound"
+                    class="router-link-active router-link-exact-active toc-link level2">/playsound</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-11"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-15"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-11"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-14"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-4"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#stopsound"
+                    class="router-link-active router-link-exact-active toc-link level2">/stopsound</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-12"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-16"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-15"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#say"
+                    class="router-link-active router-link-exact-active toc-link level2">/say</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-13"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-17"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-16"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#scoreboard"
+                    class="router-link-active router-link-exact-active toc-link level2">/scoreboard</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#前言-1"
+                        class="router-link-active router-link-exact-active toc-link level3">前言</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令展示"
+                        class="router-link-active router-link-exact-active toc-link level3">命令展示</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#setblock"
+                    class="router-link-active router-link-exact-active toc-link level2">/setblock</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-14"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-18"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名称解释-1"
+                        class="router-link-active router-link-exact-active toc-link level3">名称解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-17"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#summon"
+                    class="router-link-active router-link-exact-active toc-link level2">/summon</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-15"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-19"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-12"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-18"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#setworldspawn"
+                    class="router-link-active router-link-exact-active toc-link level2">/setworldspawn</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-16"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-20"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-19"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-5"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#spawnpoint"
+                    class="router-link-active router-link-exact-active toc-link level2">/spawnpoint</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-17"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-21"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-20"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-6"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#spreadplayers"
+                    class="router-link-active router-link-exact-active toc-link level2">/spreadplayers</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-18"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-22"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-13"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-21"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#time"
+                    class="router-link-active router-link-exact-active toc-link level2">/time</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-19"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-23"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-14"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-22"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#tp"
+                    class="router-link-active router-link-exact-active toc-link level2">/tp</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-20"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-24"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-15"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-23"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#weather"
+                    class="router-link-active router-link-exact-active toc-link level2">/weather</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-21"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-25"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名称解释-2"
+                        class="router-link-active router-link-exact-active toc-link level3">名称解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-24"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#worldborder"
+                    class="router-link-active router-link-exact-active toc-link level2">/worldborder</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-22"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-26"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-16"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-25"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#xp"
+                    class="router-link-active router-link-exact-active toc-link level2">/xp</a></li>
+                <li>
+                  <ul class="toc-list"><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令解释-23"
+                        class="router-link-active router-link-exact-active toc-link level3">命令解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#语法-27"
+                        class="router-link-active router-link-exact-active toc-link level3">语法</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#名词解释-17"
+                        class="router-link-active router-link-exact-active toc-link level3">名词解释</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#命令举例-26"
+                        class="router-link-active router-link-exact-active toc-link level3">命令举例</a></li>
+                    <!----><!--]--><!--[-->
+                    <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#小知识-7"
+                        class="router-link-active router-link-exact-active toc-link level3">小知识</a></li><!----><!--]-->
+                  </ul>
+                </li><!--]--><!--[-->
+                <li class="toc-item"><a aria-current="page" href="/MC1.12.2/command/basic.html#进阶"
+                    class="router-link-active router-link-exact-active toc-link level2">进阶</a></li><!----><!--]-->
+              </ul>
+              <div class="toc-marker" style="top:-1.7rem;"></div>
+            </div><!--[--><!----><!--]-->
+          </aside>
+        </div><!---->
+        <div class="theme-hope-content">
+          <h2 id="nbt" tabindex="-1"><a class="header-anchor" href="#nbt" aria-hidden="true">#</a> NBT</h2>
+          <p>基础篇，我们先不介绍NBT，这个介绍起来，《有点》复杂，在高级篇中会分别讲述<br><a href="/MC1.12.2/command/senior.html#nbt"
+              class=""><code>&lt;NBT介绍&gt;</code></a> | <a href="/MC1.12.2/command/senior.html#%E6%96%B9%E5%9D%97nbt"
+              class=""><code>&lt;方块NBT&gt;</code></a> | <a href="/MC1.12.2/command/senior.html#%E5%AE%9E%E4%BD%93nbt"
+              class=""><code>&lt;实体NBT&gt;</code></a> | <a href="/MC1.12.2/command/senior.html#%E7%89%A9%E5%93%81nbt"
+              class=""><code>&lt;物品NBT&gt;</code></a></p>
+          <hr>
+          <h2 id="json" tabindex="-1"><a class="header-anchor" href="#json" aria-hidden="true">#</a> Json</h2>
+          <p>与NBT一样，基础篇我们先不介绍Json格式，这虽然不是很复杂，但我就是想放在高级篇里，因为高级篇里的指令基本上都需要这俩<br><a
+              href="/MC1.12.2/command/senior.html#json" class=""><code>Json介绍</code></a> | <a
+              href="/MC1.12.2/command/senior.html#json%E6%A0%BC%E5%BC%8F" class=""><code>Json格式</code></a></p>
+          <h2 id="目标选择器" tabindex="-1"><a class="header-anchor" href="#目标选择器" aria-hidden="true">#</a> 目标选择器</h2>
+          <h3 id="前言" tabindex="-1"><a class="header-anchor" href="#前言" aria-hidden="true">#</a> 前言</h3>
+          <p>所有标注<code>&lt;玩家&gt;</code>的地方都可以是【目标选择器】</p>
+          <h3 id="介绍" tabindex="-1"><a class="header-anchor" href="#介绍" aria-hidden="true">#</a> 介绍</h3>
+          <p>目标选择器，字面意思，可以选择实体/玩家目标</p>
+          <h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3>
+          <p><code>&lt;目标类型&gt;[属性名=数据]</code></p>
+          <h3 id="名词解释" tabindex="-1"><a class="header-anchor" href="#名词解释" aria-hidden="true">#</a> 名词解释</h3>
+          <h4 id="目标类型" tabindex="-1"><a class="header-anchor" href="#目标类型" aria-hidden="true">#</a> 目标类型</h4>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:center;">目标类型</th>
+                <th style="text-align:center;">简介</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;">@a</td>
+                <td style="text-align:center;">选择全部玩家</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">@p</td>
+                <td style="text-align:center;">选择附近一名玩家</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">@r</td>
+                <td style="text-align:center;">随机选择一名玩家</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">@e</td>
+                <td style="text-align:center;">选择全部实体</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">@s</td>
+                <td style="text-align:center;">选择自己</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 id="属性名与数据" tabindex="-1"><a class="header-anchor" href="#属性名与数据" aria-hidden="true">#</a> 属性名与数据</h4>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:center;">属性名</th>
+                <th style="text-align:center;">数据</th>
+                <th style="text-align:center;">举例</th>
+                <th style="text-align:center;">简介</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;">type</td>
+                <td style="text-align:center;">实体名</td>
+                <td style="text-align:center;">@e[type=minecraft:pig]</td>
+                <td style="text-align:center;">实体-类型</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">x,y,z</td>
+                <td style="text-align:center;">坐标</td>
+                <td style="text-align:center;">@e[x=1,y=1,z=1]</td>
+                <td style="text-align:center;">实体-位置判定区域中心点</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">r</td>
+                <td style="text-align:center;">实体所在的格子，取半径的数值</td>
+                <td style="text-align:center;">@e[r=2]</td>
+                <td style="text-align:center;">位置-判定区域半径</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">m</td>
+                <td style="text-align:center;">游戏模式</td>
+                <td style="text-align:center;">@p[m=survival]</td>
+                <td style="text-align:center;">玩家-游戏模式</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">c</td>
+                <td style="text-align:center;">实体数量</td>
+                <td style="text-align:center;">@e[c=10]</td>
+                <td style="text-align:center;">实体-数量</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">lm,l</td>
+                <td style="text-align:center;">lm=最小等级，l=最大等级</td>
+                <td style="text-align:center;">@p[lm=0,l=0]</td>
+                <td style="text-align:center;">实体-经验等级</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">name</td>
+                <td style="text-align:center;">实体名字</td>
+                <td style="text-align:center;">@p[name=player_name]</td>
+                <td style="text-align:center;">实体-名字</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">team</td>
+                <td style="text-align:center;">队伍名称</td>
+                <td style="text-align:center;">@p[team=team_name]</td>
+                <td style="text-align:center;">实体-队伍</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">tag</td>
+                <td style="text-align:center;">标签名称</td>
+                <td style="text-align:center;">@p[tag=tag_name]</td>
+                <td style="text-align:center;">实体-标签</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">score</td>
+                <td style="text-align:center;">score_(计分板名称)=数值 | _min=最小值</td>
+                <td style="text-align:center;">@p[score_name=0,score_name_min=0]</td>
+                <td style="text-align:center;">计分板-数值</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">rym,ry,rxm,rx</td>
+                <td style="text-align:center;">水平 rym=最小值,ry=数值 | 垂直rxm=最小值,rx=数值</td>
+                <td style="text-align:center;">@p[rxm=0,rx=0] | @p[rym=0,ry=0]</td>
+                <td style="text-align:center;">玩家-视角朝向</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">dx,dy,dz</td>
+                <td style="text-align:center;">坐标</td>
+                <td style="text-align:center;">@p[dx=0,dy=0,dz=0]</td>
+                <td style="text-align:center;">位置-判定区域延伸</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 id="坐标" tabindex="-1"><a class="header-anchor" href="#坐标" aria-hidden="true">#</a> 坐标</h2>
+          <h3 id="查看" tabindex="-1"><a class="header-anchor" href="#查看" aria-hidden="true">#</a> 查看</h3>
+          <p>在游戏中按<code>F3</code>进入开发者信息界面</p>
+          <p>你能找到X Y Z后面分别有当前位置的坐标数值</p>
+          <h3 id="数据类型" tabindex="-1"><a class="header-anchor" href="#数据类型" aria-hidden="true">#</a> 数据类型</h3>
+          <p><code>float 小数型</code></p>
+          <h3 id="语法-1" tabindex="-1"><a class="header-anchor" href="#语法-1" aria-hidden="true">#</a> 语法</h3>
+          <p><code>x = x y = y z = z</code></p>
+          <h3 id="命令举例" tabindex="-1"><a class="header-anchor" href="#命令举例" aria-hidden="true">#</a> 命令举例</h3>
+          <p>在位置0 0 0放置石头</p>
+          <p><code>setblock 0 0 0 stone</code></p>
+          <h3 id="小知识" tabindex="-1"><a class="header-anchor" href="#小知识" aria-hidden="true">#</a> 小知识</h3>
+          <p><code>~</code> 代表当前位置</p>
+          <hr>
+          <h2 id="advancement" tabindex="-1"><a class="header-anchor" href="#advancement" aria-hidden="true">#</a>
+            <code>/advancement</code>
+          </h2>
+          <h3 id="命令解释" tabindex="-1"><a class="header-anchor" href="#命令解释" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="成就-进度" tabindex="-1"><a class="header-anchor" href="#成就-进度" aria-hidden="true">#</a> 成就/进度</h4>
+          <h3 id="语法-2" tabindex="-1"><a class="header-anchor" href="#语法-2" aria-hidden="true">#</a> 语法</h3>
+          <p>
+            <code>/advancement &lt;grant|revoke|test&gt; &lt;玩家&gt; &lt;everything|from|only|through|until&gt; &lt;进度/成就名&gt;</code>
+          </p>
+          <h3 id="名词解释-1" tabindex="-1"><a class="header-anchor" href="#名词解释-1" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th><strong>属性名</strong></th>
+                <th><strong>说明</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>grant</td>
+                <td>给予</td>
+              </tr>
+              <tr>
+                <td>revoke</td>
+                <td>移除</td>
+              </tr>
+              <tr>
+                <td>test</td>
+                <td>检测</td>
+              </tr>
+              <tr>
+                <td>everything</td>
+                <td>全部成就</td>
+              </tr>
+              <tr>
+                <td>from</td>
+                <td>从x成就（母成就）向下的所有成就（子成就）</td>
+              </tr>
+              <tr>
+                <td>only</td>
+                <td>特定的唯一成就</td>
+              </tr>
+              <tr>
+                <td>through</td>
+                <td>从x成就向上向下的所有成就</td>
+              </tr>
+              <tr>
+                <td>until</td>
+                <td>从x成就（子成就）向上的所有成就（母成就）</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-1" tabindex="-1"><a class="header-anchor" href="#命令举例-1" aria-hidden="true">#</a> 命令举例</h3>
+          <p>让&lt;玩家&gt;获得所有成就<br><code>/advancement grant &lt;玩家&gt; everything</code></p>
+          <p>
+            让&lt;玩家&gt;获得[探索的时光]和向下延申的所有成就<br><code>/advancement grant &lt;玩家&gt; from minecraft:adventure/adventuring_time</code>
+          </p>
+          <p>
+            让&lt;玩家&gt;移除[探索的时光]单一成就<br><code>/advancement revoke &lt;玩家&gt; only minecraft:adventure/adventuring_time</code>
+          </p>
+          <p>
+            让&lt;玩家&gt;移除[探索的时光]向上向下的所有成就<br><code>/advancement revoke &lt;玩家&gt; through minecraft:adventure/adventuring_time</code>
+          </p>
+          <p>
+            检测&lt;玩家&gt;是否拥有[探索的时光]及向上的所有成就<br><code>/advancement test &lt;玩家&gt; until minecraft:adventuer/adventuring_time</code>
+          </p>
+          <hr>
+          <h2 id="clear" tabindex="-1"><a class="header-anchor" href="#clear" aria-hidden="true">#</a>
+            <code>/clear</code>
+          </h2>
+          <h3 id="命令解释-1" tabindex="-1"><a class="header-anchor" href="#命令解释-1" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="清空背包" tabindex="-1"><a class="header-anchor" href="#清空背包" aria-hidden="true">#</a> 清空背包</h4>
+          <h3 id="语法-3" tabindex="-1"><a class="header-anchor" href="#语法-3" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/clear &lt;玩家&gt; &lt;物品&gt; &lt;数据&gt; &lt;最大量&gt; &lt;物品NBT&gt;</code></p>
+          <h3 id="名称解释" tabindex="-1"><a class="header-anchor" href="#名称解释" aria-hidden="true">#</a> 名称解释</h3>
+          <p><a href="/MC1.12.2/command/senior.html#%E7%89%A9%E5%93%81nbt" class="">&lt;物品NBT&gt;</a></p>
+          <h3 id="命令举例-2" tabindex="-1"><a class="header-anchor" href="#命令举例-2" aria-hidden="true">#</a> 命令举例</h3>
+          <p>假如你背包里有张纸，清除这一张纸的指令就是<br><code>/clear &lt;玩家&gt; minecraft:paper 0 1</code></p>
+          <p>
+            假如你背包里有张纸，它的名字叫[一张纸]，单独清除这一张纸的指令就是<br><code>/clear &lt;玩家&gt; minecraft:paper 0 1 {display:{Name:&quot;一张纸&quot;}}</code>
+          </p>
+          <h3 id="小知识-1" tabindex="-1"><a class="header-anchor" href="#小知识-1" aria-hidden="true">#</a> 小知识</h3>
+          <p><code>/clear</code> 不仅可以清除物品，还可以用于检测</p>
+          <p>如果想判断玩家背包里是否有张纸，指令就是<br><code>/clear &lt;玩家&gt; #minecraft:paper 0 0</code></p>
+          <hr>
+          <h2 id="clone" tabindex="-1"><a class="header-anchor" href="#clone" aria-hidden="true">#</a>
+            <code>/clone</code>
+          </h2>
+          <h3 id="命令解释-2" tabindex="-1"><a class="header-anchor" href="#命令解释-2" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="区域复制" tabindex="-1"><a class="header-anchor" href="#区域复制" aria-hidden="true">#</a> 区域复制</h4>
+          <h3 id="语法-4" tabindex="-1"><a class="header-anchor" href="#语法-4" aria-hidden="true">#</a> 语法</h3>
+          <p>
+            <code>/clone &lt;x1 y1 z1&gt; &lt;x2 y2 z2&gt; &lt;x y z&gt; &lt;filtered|masked|replace&gt; &lt;force|move|normal&gt;</code>
+          </p>
+          <h3 id="名词解释-2" tabindex="-1"><a class="header-anchor" href="#名词解释-2" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>属性名</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>filetered</td>
+                <td>不复制指定方块</td>
+              </tr>
+              <tr>
+                <td>masked</td>
+                <td>遮罩模式 仅复制非空气方块 保持目的区域原本会被替换为空气的方块不变 可以理解为二者重叠</td>
+              </tr>
+              <tr>
+                <td>replace</td>
+                <td>复制所有方块 会用你选中区域所有方块替换目的区域</td>
+              </tr>
+              <tr>
+                <td>force</td>
+                <td>强制复制，无论你复制的位置会不会与原来的区域重合</td>
+              </tr>
+              <tr>
+                <td>move</td>
+                <td>复制并将源位置替换空气</td>
+              </tr>
+              <tr>
+                <td>normal</td>
+                <td>不执行force和move</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-3" tabindex="-1"><a class="header-anchor" href="#命令举例-3" aria-hidden="true">#</a> 命令举例</h3>
+          <p>不加参数执行复制<br><code>/clone 0 0 0 1 1 1 3 3 3</code></p>
+          <p>复制并替换<br><code>/clone 0 0 0 1 1 1 3 3 3 replace</code></p>
+          <p>强制复制区域内除空气方块外的所有方块<br><code>/clone 0 0 0 1 1 1 3 3 3 masked force</code></p>
+          <p>强制复制<br><code>/clone 0 0 0 1 1 1 3 3 3 force</code></p>
+          <h3 id="小知识-2" tabindex="-1"><a class="header-anchor" href="#小知识-2" aria-hidden="true">#</a> 小知识</h3>
+          <p>1.复制方块数量不得高于32767</p>
+          <p>大大原话：<code>我也不知道为什么这么傻逼</code></p>
+          <p>2.【粘贴源】一般在第二个【复制源】中，要注意粘贴的位置，否则就诶嘿了(￣y▽,￣)╭</p>
+          <hr>
+          <h2 id="difficulty" tabindex="-1"><a class="header-anchor" href="#difficulty" aria-hidden="true">#</a>
+            <code>/difficulty</code>
+          </h2>
+          <h3 id="命令解释-3" tabindex="-1"><a class="header-anchor" href="#命令解释-3" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="游戏难度" tabindex="-1"><a class="header-anchor" href="#游戏难度" aria-hidden="true">#</a> 游戏难度</h4>
+          <h3 id="语法-5" tabindex="-1"><a class="header-anchor" href="#语法-5" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/difficulty &lt;peaceful|easy|normal|hard&gt;</code></p>
+          <h3 id="名词解释-3" tabindex="-1"><a class="header-anchor" href="#名词解释-3" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>属性名</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>peaceful</td>
+                <td>和平</td>
+              </tr>
+              <tr>
+                <td>easy</td>
+                <td>简单</td>
+              </tr>
+              <tr>
+                <td>normal</td>
+                <td>普通</td>
+              </tr>
+              <tr>
+                <td>hard</td>
+                <td>困难</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-4" tabindex="-1"><a class="header-anchor" href="#命令举例-4" aria-hidden="true">#</a> 命令举例</h3>
+          <p>简单模式</p>
+          <p><code>/difficlty easy</code></p>
+          <h3 id="小知识-3" tabindex="-1"><a class="header-anchor" href="#小知识-3" aria-hidden="true">#</a> 小知识</h3>
+          <p>就算锁了难度，可以用指令切换哦。</p>
+          <hr>
+          <h2 id="effect" tabindex="-1"><a class="header-anchor" href="#effect" aria-hidden="true">#</a>
+            <code>/effect</code>
+          </h2>
+          <h3 id="命令解释-4" tabindex="-1"><a class="header-anchor" href="#命令解释-4" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="药水效果" tabindex="-1"><a class="header-anchor" href="#药水效果" aria-hidden="true">#</a> 药水效果</h4>
+          <h3 id="语法-6" tabindex="-1"><a class="header-anchor" href="#语法-6" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/effect &lt;玩家&gt; &lt;效果名|ID&gt; &lt;时间&gt; &lt;等级&gt; &lt;隐藏粒子&gt;</code></p>
+          <h3 id="名词解释-4" tabindex="-1"><a class="header-anchor" href="#名词解释-4" aria-hidden="true">#</a> 名词解释</h3>
+          <h4 id="效果" tabindex="-1"><a class="header-anchor" href="#效果" aria-hidden="true">#</a> 效果</h4>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:center;">效果ID</th>
+                <th style="text-align:center;">效果名</th>
+                <th style="text-align:center;">效果</th>
+                <th>简介</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">speed</td>
+                <td style="text-align:center;">速度</td>
+                <td>提高移动速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:center;">slowness</td>
+                <td style="text-align:center;">缓慢</td>
+                <td>减慢移动速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:center;">haste</td>
+                <td style="text-align:center;">急迫</td>
+                <td>提高挖掘与攻击的速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:center;">mining_fatigue</td>
+                <td style="text-align:center;">挖掘疲劳</td>
+                <td>减慢挖掘与攻击的速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center;">strength</td>
+                <td style="text-align:center;">力量</td>
+                <td>提高近战攻击伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:center;">instant_damage</td>
+                <td style="text-align:center;">瞬间治疗</td>
+                <td>治疗实体，伤害亡灵生物(如:骷髅)</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:center;">instant_damage</td>
+                <td style="text-align:center;">瞬间伤害</td>
+                <td>伤害实体，治疗亡灵生物(如:骷髅)</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:center;">jumpboost</td>
+                <td style="text-align:center;">跳跃提升</td>
+                <td>提高跳跃高度，减少摔落伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:center;">nausea</td>
+                <td style="text-align:center;">反胃</td>
+                <td>使画面晃动扭曲(类似进入下界传送门的效果)</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:center;">regeneration</td>
+                <td style="text-align:center;">生命恢复</td>
+                <td>逐渐恢复生命</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:center;">resistance</td>
+                <td style="text-align:center;">抗性提升</td>
+                <td>减少大多数种类的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:center;">fire_resistance</td>
+                <td style="text-align:center;">防火</td>
+                <td>免疫火焰与岩浆的伤害，且身上的火不会持续燃烧</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:center;">water_breathing</td>
+                <td style="text-align:center;">水下呼吸</td>
+                <td>防止氧气值耗尽导致的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:center;">Invisibility</td>
+                <td style="text-align:center;">隐身</td>
+                <td>使实体隐形</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">15</td>
+                <td style="text-align:center;">blindness</td>
+                <td style="text-align:center;">失明</td>
+                <td>降低视野，并且无法疾跑</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:center;">night_vision</td>
+                <td style="text-align:center;">夜视</td>
+                <td>在光线等级较低的地方也能看清</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:center;">hunger</td>
+                <td style="text-align:center;">饥饿</td>
+                <td>加快饥饿值的消耗</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:center;">weakness</td>
+                <td style="text-align:center;">虚弱</td>
+                <td>减少近战造成的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:center;">poison</td>
+                <td style="text-align:center;">中毒</td>
+                <td>持续受到伤害，但不会致死</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:center;">wither</td>
+                <td style="text-align:center;">凋零</td>
+                <td>持续受到伤害，且会致死</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:center;">health_boost</td>
+                <td style="text-align:center;">生命提升</td>
+                <td>提高生命值最大上限</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:center;">absorption</td>
+                <td style="text-align:center;">伤害吸收</td>
+                <td>提供额外的伤害吸收生命值</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">23</td>
+                <td style="text-align:center;">saturation</td>
+                <td style="text-align:center;">饱和</td>
+                <td>恢复饥饿值与饱和度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:center;">glowing</td>
+                <td style="text-align:center;">发光</td>
+                <td>为实体增加可透过方块的高亮轮廓线</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">25</td>
+                <td style="text-align:center;">levitation</td>
+                <td style="text-align:center;">飘浮</td>
+                <td>使实体飘浮</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">26</td>
+                <td style="text-align:center;">luck</td>
+                <td style="text-align:center;">幸运</td>
+                <td>提升获得高品质战利品的概率</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:center;">unluck</td>
+                <td style="text-align:center;">霉运</td>
+                <td>降低获得高品质战利品的概率</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 id="隐藏粒子" tabindex="-1"><a class="header-anchor" href="#隐藏粒子" aria-hidden="true">#</a> 隐藏粒子</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>属性名</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>隐藏粒子</td>
+                <td>true 启用隐藏 | false 禁用隐藏</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-5" tabindex="-1"><a class="header-anchor" href="#命令举例-5" aria-hidden="true">#</a> 命令举例</h3>
+          <p>给玩家一个20s的速度2效果<br> ID：<code>/effcet &lt;玩家&gt; 1 20 2</code><br>
+            名称：<code>/effcet &lt;玩家&gt; speed 1 20 2</code></p>
+          <p>给玩家一个20s的缓慢1效果，隐藏粒子<br> ID：<code>/effcet &lt;玩家&gt; 2 20 1 true</code><br>
+            名称：<code>/effcet &lt;玩家&gt; sowness 20 1 true</code></p>
+          <hr>
+          <h2 id="enchant" tabindex="-1"><a class="header-anchor" href="#enchant" aria-hidden="true">#</a>
+            <code>/enchant</code>
+          </h2>
+          <h3 id="命令解释-5" tabindex="-1"><a class="header-anchor" href="#命令解释-5" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="给手中的物品附魔" tabindex="-1"><a class="header-anchor" href="#给手中的物品附魔" aria-hidden="true">#</a> 给手中的物品附魔
+          </h4>
+          <h3 id="语法-7" tabindex="-1"><a class="header-anchor" href="#语法-7" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/enchant &lt;玩家&gt; &lt;附魔名|ID&gt; &lt;等级&gt;</code></p>
+          <h3 id="名词解释-5" tabindex="-1"><a class="header-anchor" href="#名词解释-5" aria-hidden="true">#</a> 名词解释</h3>
+          <h4 id="附魔名" tabindex="-1"><a class="header-anchor" href="#附魔名" aria-hidden="true">#</a> 附魔名</h4>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:center;">ID</th>
+                <th style="text-align:center;">附魔名</th>
+                <th style="text-align:center;">附魔</th>
+                <th style="text-align:center;">简介</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:center;">aqua_affinity</td>
+                <td style="text-align:center;">水下速掘</td>
+                <td style="text-align:center;">增加水下挖掘速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:center;">bane_of_arthropods</td>
+                <td style="text-align:center;">节肢杀手</td>
+                <td style="text-align:center;">对节肢生物(如:蜘蛛)伤害更高</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:center;">blast_protection</td>
+                <td style="text-align:center;">爆炸保护</td>
+                <td style="text-align:center;">减少受到的爆炸伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:center;">binding_curse</td>
+                <td style="text-align:center;">绑定诅咒</td>
+                <td style="text-align:center;">物品无法被丢弃</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">71</td>
+                <td style="text-align:center;">vanishing_curse</td>
+                <td style="text-align:center;">消失诅咒</td>
+                <td style="text-align:center;">物品会在玩家死亡时消失</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:center;">depth_strider</td>
+                <td style="text-align:center;">深海探索者</td>
+                <td style="text-align:center;">增加水下行走速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">32</td>
+                <td style="text-align:center;">efficiency</td>
+                <td style="text-align:center;">效率</td>
+                <td style="text-align:center;">加快挖掘速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:center;">feather_falling</td>
+                <td style="text-align:center;">摔落保护</td>
+                <td style="text-align:center;">减少摔落伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:center;">fire_aspect</td>
+                <td style="text-align:center;">火焰附加</td>
+                <td style="text-align:center;">近战攻击使目标着火</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">fire_protection</td>
+                <td style="text-align:center;">火焰保护</td>
+                <td style="text-align:center;">减少受到的火焰伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">50</td>
+                <td style="text-align:center;">flame</td>
+                <td style="text-align:center;">火矢</td>
+                <td style="text-align:center;">射箭使目标着火</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">35</td>
+                <td style="text-align:center;">fortune</td>
+                <td style="text-align:center;">时运</td>
+                <td style="text-align:center;">增加方块掉落</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">9</td>
+                <td style="text-align:center;">frost_walker</td>
+                <td style="text-align:center;">冰霜行者</td>
+                <td style="text-align:center;">允许在水上行走</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">51</td>
+                <td style="text-align:center;">infinity</td>
+                <td style="text-align:center;">无限</td>
+                <td style="text-align:center;">射箭不会消耗普通箭矢</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:center;">knockback</td>
+                <td style="text-align:center;">击退</td>
+                <td style="text-align:center;">增加击退的距离</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:center;">looting</td>
+                <td style="text-align:center;">抢夺</td>
+                <td style="text-align:center;">击败生物能掉落更多物品</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">61</td>
+                <td style="text-align:center;">luck_of_the_sea</td>
+                <td style="text-align:center;">海之眷顾</td>
+                <td style="text-align:center;">提高钓鱼时获得的宝藏概率</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">62</td>
+                <td style="text-align:center;">lure</td>
+                <td style="text-align:center;">饵钓</td>
+                <td style="text-align:center;">加快鱼咬钩的速度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">70</td>
+                <td style="text-align:center;">mending</td>
+                <td style="text-align:center;">经验修补</td>
+                <td style="text-align:center;">用经验修复物品的耐久度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">48</td>
+                <td style="text-align:center;">power</td>
+                <td style="text-align:center;">力量</td>
+                <td style="text-align:center;">增加弓箭的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:center;">projectile_protection</td>
+                <td style="text-align:center;">弹射物保护</td>
+                <td style="text-align:center;">减少来自弹射物的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">0</td>
+                <td style="text-align:center;">protection</td>
+                <td style="text-align:center;">保护</td>
+                <td style="text-align:center;">减少大多数种类的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">49</td>
+                <td style="text-align:center;">punch</td>
+                <td style="text-align:center;">冲击</td>
+                <td style="text-align:center;">增加弓箭的击退距离</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center;">respiration</td>
+                <td style="text-align:center;">水下呼吸</td>
+                <td style="text-align:center;">延长水下呼吸的时间</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:center;">sharpness</td>
+                <td style="text-align:center;">锋利</td>
+                <td style="text-align:center;">增加来自近战攻击的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">33</td>
+                <td style="text-align:center;">silk_touch</td>
+                <td style="text-align:center;">精准采集</td>
+                <td style="text-align:center;">开采方块完整掉落(如:红石)</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:center;">smite</td>
+                <td style="text-align:center;">亡灵杀手</td>
+                <td style="text-align:center;">对亡灵生物(如:僵尸)伤害更高</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:center;">sweeping_edge</td>
+                <td style="text-align:center;">横扫之刃</td>
+                <td style="text-align:center;">增加横扫的攻击伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">7</td>
+                <td style="text-align:center;">thorns</td>
+                <td style="text-align:center;">荆棘</td>
+                <td style="text-align:center;">反弹来自攻击者的部分伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">34</td>
+                <td style="text-align:center;">unbreaking</td>
+                <td style="text-align:center;">耐久</td>
+                <td style="text-align:center;">减少物品下降耐久的概率</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-6" tabindex="-1"><a class="header-anchor" href="#命令举例-6" aria-hidden="true">#</a> 命令举例</h3>
+          <p>附魔玩家武器附魔一个【横扫之刃】</p>
+          <p>ID：<code>/enchant &lt;玩家&gt; 22</code></p>
+          <p>附魔名：<code>/enchant &lt;玩家&gt; sweeping_edge</code></p>
+          <hr>
+          <h2 id="fill" tabindex="-1"><a class="header-anchor" href="#fill" aria-hidden="true">#</a> <code>/fill</code>
+          </h2>
+          <h3 id="命令解释-6" tabindex="-1"><a class="header-anchor" href="#命令解释-6" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="区域填充" tabindex="-1"><a class="header-anchor" href="#区域填充" aria-hidden="true">#</a> 区域填充</h4>
+          <h3 id="语法-8" tabindex="-1"><a class="header-anchor" href="#语法-8" aria-hidden="true">#</a> 语法</h3>
+          <p>
+            <code>/fill &lt;x1 y1 z1&gt; &lt;x2 y2 z2&gt; &lt;方块&gt; &lt;数据值&gt; &lt;destroy|hollow|keep|outline|replace&gt;</code>
+          </p>
+          <p><code>/fill &lt;x1 y1 z1&gt; &lt;x2 y2 z2&gt; &lt;方块&gt; &lt;数据值&gt; repalce &lt;方块&gt; &lt;数据&gt;</code>
+          </p>
+          <h3 id="名词解释-6" tabindex="-1"><a class="header-anchor" href="#名词解释-6" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>属性名</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>destroy</td>
+                <td>摧毁方块填充，生成掉落物，粒子效果和音效</td>
+              </tr>
+              <tr>
+                <td>hollow</td>
+                <td>填充出一个中空的立方体</td>
+              </tr>
+              <tr>
+                <td>keep</td>
+                <td>填充出一个中空的立方体</td>
+              </tr>
+              <tr>
+                <td>outline</td>
+                <td>填充出一个内部与填充前一样的立方体（重叠）</td>
+              </tr>
+              <tr>
+                <td>replace</td>
+                <td>强制替换</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-7" tabindex="-1"><a class="header-anchor" href="#命令举例-7" aria-hidden="true">#</a> 命令举例</h3>
+          <p>填充坐标000到333为石头<br><code>/fill 0 0 0 3 3 3 stone</code></p>
+          <p>将坐标000到333的石头替换为橡木板<br><code>/fill 0 0 0 3 3 3 stone replace plank 0 </code></p>
+          <hr>
+          <h2 id="gamemode" tabindex="-1"><a class="header-anchor" href="#gamemode" aria-hidden="true">#</a>
+            <code>/gamemode</code>
+          </h2>
+          <h3 id="介绍-1" tabindex="-1"><a class="header-anchor" href="#介绍-1" aria-hidden="true">#</a> 介绍</h3>
+          <h4 id="游戏模式" tabindex="-1"><a class="header-anchor" href="#游戏模式" aria-hidden="true">#</a> 游戏模式</h4>
+          <p>相关指令：<a href="#defaultgamemode"><code>/defaultgamemode</code></a></p>
+          <h3 id="语法-9" tabindex="-1"><a class="header-anchor" href="#语法-9" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/gamemode &lt;模式名|ID&gt; &lt;玩家&gt;</code></p>
+          <h3 id="名词解释-7" tabindex="-1"><a class="header-anchor" href="#名词解释-7" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>模式名</th>
+                <th>模式</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>survival</td>
+                <td>生存模式</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>creative</td>
+                <td>创造模式</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>adventure</td>
+                <td>冒险模式</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>spectator</td>
+                <td>旁观者模式</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-8" tabindex="-1"><a class="header-anchor" href="#命令举例-8" aria-hidden="true">#</a> 命令举例</h3>
+          <p>切换到生存模式<br> ID：<code>/gamemode 0</code><br> 模式名：<code>/gamemode survival </code></p>
+          <p>给玩家切换到生存模式<br> ID：<code>/gamemode 0 &lt;玩家&gt;</code><br> 模式名：<code>/gamemode survival &lt;玩家&gt;</code>
+          </p>
+          <hr>
+          <h2 id="defaultgamemode" tabindex="-1"><a class="header-anchor" href="#defaultgamemode"
+              aria-hidden="true">#</a> <code>/defaultgamemode</code></h2>
+          <h3 id="介绍-2" tabindex="-1"><a class="header-anchor" href="#介绍-2" aria-hidden="true">#</a> 介绍</h3>
+          <h4 id="游戏模式-1" tabindex="-1"><a class="header-anchor" href="#游戏模式-1" aria-hidden="true">#</a> 游戏模式</h4>
+          <p>相关指令：<a href="#gamemode"><code>/gamemode</code></a></p>
+          <h3 id="语法-10" tabindex="-1"><a class="header-anchor" href="#语法-10" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/gamemode &lt;模式名|ID&gt; &lt;玩家&gt;</code></p>
+          <h3 id="名词解释-8" tabindex="-1"><a class="header-anchor" href="#名词解释-8" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>模式名</th>
+                <th>模式</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>survival</td>
+                <td>生存模式</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>creative</td>
+                <td>创造模式</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>adventure</td>
+                <td>冒险模式</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>spectator</td>
+                <td>旁观者模式</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-9" tabindex="-1"><a class="header-anchor" href="#命令举例-9" aria-hidden="true">#</a> 命令举例</h3>
+          <p>默认生存模式<br> ID：<code>/defaultgamemode 0</code><br> 模式名：<code>/defaultgamemode survival </code></p>
+          <hr>
+          <h2 id="gamerule" tabindex="-1"><a class="header-anchor" href="#gamerule" aria-hidden="true">#</a>
+            <code>/gamerule</code>
+          </h2>
+          <h3 id="命令解释-7" tabindex="-1"><a class="header-anchor" href="#命令解释-7" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="世界规则-游戏规则" tabindex="-1"><a class="header-anchor" href="#世界规则-游戏规则" aria-hidden="true">#</a> 世界规则/游戏规则
+          </h4>
+          <h3 id="语法-11" tabindex="-1"><a class="header-anchor" href="#语法-11" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/gamerule &lt;规则名&gt; &lt;true|false|数值&gt;</code></p>
+          <h3 id="名词解释-9" tabindex="-1"><a class="header-anchor" href="#名词解释-9" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>规则名</th>
+                <th>是否为选项</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>announceAdvancements</td>
+                <td>是</td>
+                <td>是否在聊天框提示玩家进度达成</td>
+              </tr>
+              <tr>
+                <td>commandBlockOutput</td>
+                <td>是</td>
+                <td>是否在聊天框提示玩家进度达成</td>
+              </tr>
+              <tr>
+                <td>DisableElytraMovementCheck</td>
+                <td>是</td>
+                <td>是否在聊天框提示玩家进度达成</td>
+              </tr>
+              <tr>
+                <td>doDaylightCycle</td>
+                <td>是</td>
+                <td>是否在聊天框提示玩家进度达成</td>
+              </tr>
+              <tr>
+                <td>doEntityDrops</td>
+                <td>是</td>
+                <td>实体是否掉落物品</td>
+              </tr>
+              <tr>
+                <td>doFireTick</td>
+                <td>是</td>
+                <td>实体是否掉落物品</td>
+              </tr>
+              <tr>
+                <td>doLimitedCrafting</td>
+                <td>是</td>
+                <td>合成表是否解锁后才能使用</td>
+              </tr>
+              <tr>
+                <td>doMobLoot</td>
+                <td>是</td>
+                <td>生物是否掉落物品</td>
+              </tr>
+              <tr>
+                <td>doMobSpawning</td>
+                <td>是</td>
+                <td>生物是否自然生成</td>
+              </tr>
+              <tr>
+                <td>doTileDrops</td>
+                <td>是</td>
+                <td>生物是否自然生成</td>
+              </tr>
+              <tr>
+                <td>doWeatherCycle</td>
+                <td>是</td>
+                <td>天气是否自然变化</td>
+              </tr>
+              <tr>
+                <td>gameLoopFunction</td>
+                <td>是</td>
+                <td>循环执行某个function函数</td>
+              </tr>
+              <tr>
+                <td>keepInventory</td>
+                <td>是</td>
+                <td>保留物品栏，死亡不掉落</td>
+              </tr>
+              <tr>
+                <td>logAdminCommands</td>
+                <td>是</td>
+                <td>是否记录使用过的命令</td>
+              </tr>
+              <tr>
+                <td>maxCommandChainLength</td>
+                <td>是</td>
+                <td>是否记录使用过的命令</td>
+              </tr>
+              <tr>
+                <td>maxEntityCramming</td>
+                <td>是</td>
+                <td>玩家或生物能同时推动其他实体的数量</td>
+              </tr>
+              <tr>
+                <td>mobGriefing</td>
+                <td>是</td>
+                <td>生物是否能进行破坏性行为，即放置，修改或破坏方块，捡拾物品，但对TNT和末影水晶无效</td>
+              </tr>
+              <tr>
+                <td>naturalRegeneration</td>
+                <td>是</td>
+                <td>是否自然恢复生命值</td>
+              </tr>
+              <tr>
+                <td>openblocks:spawn_graves</td>
+                <td>是</td>
+                <td>非minecraft规则，是开放性方块这一mod 是否生成坟</td>
+              </tr>
+              <tr>
+                <td>randomTickSpeed</td>
+                <td>否</td>
+                <td>游戏内随机方块发生的频率 0为禁用 数字越大随机刻频率越大</td>
+              </tr>
+              <tr>
+                <td>reducedDebugInfo</td>
+                <td>是</td>
+                <td>与F3有关的高级调试是否显示详细信息，影响F3+B和F3+G</td>
+              </tr>
+              <tr>
+                <td>sendCommandFaceback</td>
+                <td>是</td>
+                <td>是否显示玩家执行命令的反馈</td>
+              </tr>
+              <tr>
+                <td>showDeathMessages</td>
+                <td>是</td>
+                <td>是否显示玩家死亡信息</td>
+              </tr>
+              <tr>
+                <td>spawnRadius</td>
+                <td>否</td>
+                <td>是否允许旁观模式的玩家生成区块</td>
+              </tr>
+              <tr>
+                <td>spectatorsGenerateChunks</td>
+                <td>是</td>
+                <td>是否允许旁观模式的玩家生成区块</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-10" tabindex="-1"><a class="header-anchor" href="#命令举例-10" aria-hidden="true">#</a> 命令举例</h3>
+          <p>开启死亡不掉落</p>
+          <p><code>/gamerule keepInventory true</code></p>
+          <hr>
+          <h2 id="give" tabindex="-1"><a class="header-anchor" href="#give" aria-hidden="true">#</a> <code>/give</code>
+          </h2>
+          <h3 id="命令解释-8" tabindex="-1"><a class="header-anchor" href="#命令解释-8" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="给玩家物品" tabindex="-1"><a class="header-anchor" href="#给玩家物品" aria-hidden="true">#</a> 给玩家物品</h4>
+          <h3 id="语法-12" tabindex="-1"><a class="header-anchor" href="#语法-12" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/give &lt;玩家&gt; &lt;物品&gt; &lt;数量&gt; &lt;数据值&gt; &lt;物品NBT&gt;</code></p>
+          <h3 id="名词解释-10" tabindex="-1"><a class="header-anchor" href="#名词解释-10" aria-hidden="true">#</a> 名词解释</h3>
+          <p><a href="/MC1.12.2/command/senior.html#%E7%89%A9%E5%93%81nbt" class="">&lt;物品NBT&gt;</a></p>
+          <h3 id="命令举例-11" tabindex="-1"><a class="header-anchor" href="#命令举例-11" aria-hidden="true">#</a> 命令举例</h3>
+          <p>给玩家一个石头<br><code>/give &lt;玩家&gt; minecraft:stone 1</code></p>
+          <p>给玩家一个名为”石头“的纸<br><code>/give &lt;玩家&gt; minecraft:paper 1 0 {display:{Name:&quot;石头&quot;}}</code></p>
+          <hr>
+          <h2 id="help" tabindex="-1"><a class="header-anchor" href="#help" aria-hidden="true">#</a> <code>/help</code>
+          </h2>
+          <h3 id="命令解释-9" tabindex="-1"><a class="header-anchor" href="#命令解释-9" aria-hidden="true">#</a> 命令解释</h3>
+          <p>查看命令的输入格式</p>
+          <h3 id="语法-13" tabindex="-1"><a class="header-anchor" href="#语法-13" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/help &lt;命令&gt;</code></p>
+          <h3 id="命令举例-12" tabindex="-1"><a class="header-anchor" href="#命令举例-12" aria-hidden="true">#</a> 命令举例</h3>
+          <p>查看xp指令的语法<br><code>/help xp</code></p>
+          <hr>
+          <h2 id="kill" tabindex="-1"><a class="header-anchor" href="#kill" aria-hidden="true">#</a> <code>/kill</code>
+          </h2>
+          <h3 id="命令解释-10" tabindex="-1"><a class="header-anchor" href="#命令解释-10" aria-hidden="true">#</a> 命令解释</h3>
+          <p>清除实体/玩家</p>
+          <h3 id="语法-14" tabindex="-1"><a class="header-anchor" href="#语法-14" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/kill &lt;玩家&gt;</code></p>
+          <h3 id="命令举例-13" tabindex="-1"><a class="header-anchor" href="#命令举例-13" aria-hidden="true">#</a> 命令举例</h3>
+          <p>自杀<br><code>/kill</code><br> 清除玩家<br><code>/kill &lt;玩家&gt;</code><br>
+            清除附近2格的玩家<br><code>/kill @p[r=2]</code><br> 清除附近2格的猪<br><code>/kill @e[r=2,type=minecraft:pig]</code></p>
+          <hr>
+          <h2 id="playsound" tabindex="-1"><a class="header-anchor" href="#playsound" aria-hidden="true">#</a>
+            <code>/playsound</code>
+          </h2>
+          <h3 id="命令解释-11" tabindex="-1"><a class="header-anchor" href="#命令解释-11" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="播放声音-音乐" tabindex="-1"><a class="header-anchor" href="#播放声音-音乐" aria-hidden="true">#</a> 播放声音/音乐</h4>
+          <p>相关命令</p>
+          <p><a href="#stopsound"><code>/stopsound</code></a></p>
+          <h3 id="语法-15" tabindex="-1"><a class="header-anchor" href="#语法-15" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/playsound &lt;音频&gt; &lt;播放源&gt; &lt;玩家&gt; &lt;x y z&gt; 有效距离量&gt; &lt;音调&gt; &lt;半径外音量&gt;</code>
+          </p>
+          <h3 id="名词解释-11" tabindex="-1"><a class="header-anchor" href="#名词解释-11" aria-hidden="true">#</a> 名词解释</h3>
+          <h4 id="播放源" tabindex="-1"><a class="header-anchor" href="#播放源" aria-hidden="true">#</a> 播放源</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>来源名</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>music</td>
+                <td>音乐</td>
+              </tr>
+              <tr>
+                <td>record</td>
+                <td>唱片机</td>
+              </tr>
+              <tr>
+                <td>block</td>
+                <td>方块</td>
+              </tr>
+              <tr>
+                <td>player</td>
+                <td>玩家</td>
+              </tr>
+              <tr>
+                <td>master</td>
+                <td>主音量</td>
+              </tr>
+              <tr>
+                <td>weather</td>
+                <td>天气</td>
+              </tr>
+              <tr>
+                <td>hostile</td>
+                <td>敌对生物</td>
+              </tr>
+              <tr>
+                <td>neutral</td>
+                <td>友好生物</td>
+              </tr>
+              <tr>
+                <td>ambient</td>
+                <td>环境</td>
+              </tr>
+              <tr>
+                <td>voice</td>
+                <td>声音/语音</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 id="音频" tabindex="-1"><a class="header-anchor" href="#音频" aria-hidden="true">#</a> 音频</h4>
+          <p><a href="https://minecraft.fandom.com/zh/wiki/Sounds.json#%E5%A3%B0%E9%9F%B3%E4%BA%8B%E4%BB%B6"
+              target="_blank" rel="noopener noreferrer">WIki音频<span><svg class="external-link-icon"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p>
+          <p><a href="/MC1.12.2/pack/sound">音频包制作</a></p>
+          <h3 id="命令举例-14" tabindex="-1"><a class="header-anchor" href="#命令举例-14" aria-hidden="true">#</a> 命令举例</h3>
+          <p>给玩家播放一个石头破碎的音效</p>
+          <p><code>/playsound block.stone.hit record &lt;玩家&gt; ~ ~ ~ 10000</code></p>
+          <h3 id="小知识-4" tabindex="-1"><a class="header-anchor" href="#小知识-4" aria-hidden="true">#</a> 小知识</h3>
+          <p>【播放源】使用record，【有效距离】10000就好，再大也没有意义</p>
+          <hr>
+          <h2 id="stopsound" tabindex="-1"><a class="header-anchor" href="#stopsound" aria-hidden="true">#</a>
+            <code>/stopsound</code>
+          </h2>
+          <h3 id="命令解释-12" tabindex="-1"><a class="header-anchor" href="#命令解释-12" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="停止播放音乐-音频" tabindex="-1"><a class="header-anchor" href="#停止播放音乐-音频" aria-hidden="true">#</a> 停止播放音乐/音频
+          </h4>
+          <h3 id="语法-16" tabindex="-1"><a class="header-anchor" href="#语法-16" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/stopsound &lt;玩家&gt; </code></p>
+          <h3 id="命令举例-15" tabindex="-1"><a class="header-anchor" href="#命令举例-15" aria-hidden="true">#</a> 命令举例</h3>
+          <p>停止所有玩家的声音<br><code>/stopsound @a</code></p>
+          <h2 id="say" tabindex="-1"><a class="header-anchor" href="#say" aria-hidden="true">#</a> <code>/say</code>
+          </h2>
+          <h3 id="命令解释-13" tabindex="-1"><a class="header-anchor" href="#命令解释-13" aria-hidden="true">#</a> 命令解释</h3>
+          <p>发送一段文字</p>
+          <h3 id="语法-17" tabindex="-1"><a class="header-anchor" href="#语法-17" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/say &lt;文字&gt;</code></p>
+          <h3 id="命令举例-16" tabindex="-1"><a class="header-anchor" href="#命令举例-16" aria-hidden="true">#</a> 命令举例</h3>
+          <p>发送你好</p>
+          <p><code>/say 你好</code></p>
+          <hr>
+          <h2 id="scoreboard" tabindex="-1"><a class="header-anchor" href="#scoreboard" aria-hidden="true">#</a>
+            <code>/scoreboard</code>
+          </h2>
+          <h3 id="前言-1" tabindex="-1"><a class="header-anchor" href="#前言-1" aria-hidden="true">#</a> 前言</h3>
+          <p>因为此命令比较复杂，这里只讲述怎么创建死亡榜，想具体学习的请前往高级命令<a href="/MC1.12.2/command/senior.html#scoreboard"
+              class=""><code>/scoreboard</code></a></p>
+          <h3 id="命令展示" tabindex="-1"><a class="header-anchor" href="#命令展示" aria-hidden="true">#</a> 命令展示</h3>
+          <h4 id="创建" tabindex="-1"><a class="header-anchor" href="#创建" aria-hidden="true">#</a> 创建</h4>
+          <p><code>/scoreboard objectives add deathCount deathCount 死亡榜</code></p>
+          <h4 id="显示" tabindex="-1"><a class="header-anchor" href="#显示" aria-hidden="true">#</a> 显示</h4>
+          <p><code>/scoreboard objectives setdisplay sidebar deathCount</code></p>
+          <p><code>/scoreboard players set @a deathCount 0</code></p>
+          <h4 id="设置" tabindex="-1"><a class="header-anchor" href="#设置" aria-hidden="true">#</a> 设置</h4>
+          <p><code>/scoreboard players set &lt;玩家&gt; deathCount &lt;数字&gt;</code></p>
+          <hr>
+          <h2 id="setblock" tabindex="-1"><a class="header-anchor" href="#setblock" aria-hidden="true">#</a>
+            <code>/setblock </code>
+          </h2>
+          <h3 id="命令解释-14" tabindex="-1"><a class="header-anchor" href="#命令解释-14" aria-hidden="true">#</a> 命令解释</h3>
+          <p>在某个位置生成方块</p>
+          <h3 id="语法-18" tabindex="-1"><a class="header-anchor" href="#语法-18" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/setblock &lt;x y z&gt; &lt;方块名|ID&gt; &lt;数据值&gt; &lt;方块NBT&gt;</code></p>
+          <h3 id="名称解释-1" tabindex="-1"><a class="header-anchor" href="#名称解释-1" aria-hidden="true">#</a> 名称解释</h3>
+          <p><a href="/MC1.12.2/command/senior.html#%E6%96%B9%E5%9D%97NBT" class="">&lt;方块NBT&gt;</a></p>
+          <h3 id="命令举例-17" tabindex="-1"><a class="header-anchor" href="#命令举例-17" aria-hidden="true">#</a> 命令举例</h3>
+          <p>在坐标0 0 0位置放置一个石头</p>
+          <p><code>/setblock 0 0 0 minecraft:stone</code></p>
+          <hr>
+          <h2 id="summon" tabindex="-1"><a class="header-anchor" href="#summon" aria-hidden="true">#</a>
+            <code>/summon</code>
+          </h2>
+          <h3 id="命令解释-15" tabindex="-1"><a class="header-anchor" href="#命令解释-15" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="生成实体" tabindex="-1"><a class="header-anchor" href="#生成实体" aria-hidden="true">#</a> 生成实体</h4>
+          <h3 id="语法-19" tabindex="-1"><a class="header-anchor" href="#语法-19" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/summon &lt;实体名&gt; &lt;x y z&gt; &lt;实体NBT&gt;</code></p>
+          <h3 id="名词解释-12" tabindex="-1"><a class="header-anchor" href="#名词解释-12" aria-hidden="true">#</a> 名词解释</h3>
+          <p><a href="/MC1.12.2/command/senior.html#%E5%AE%9E%E4%BD%93NBT" class="">&lt;实体NBT&gt;</a></p>
+          <h3 id="命令举例-18" tabindex="-1"><a class="header-anchor" href="#命令举例-18" aria-hidden="true">#</a> 命令举例</h3>
+          <p>在坐标0 0 0位置生成一头猪<br><code>/summon miencraft:pig 0 0 0</code></p>
+          <h2 id="setworldspawn" tabindex="-1"><a class="header-anchor" href="#setworldspawn" aria-hidden="true">#</a>
+            <code>/setworldspawn</code>
+          </h2>
+          <h3 id="命令解释-16" tabindex="-1"><a class="header-anchor" href="#命令解释-16" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="设置世界出生点" tabindex="-1"><a class="header-anchor" href="#设置世界出生点" aria-hidden="true">#</a> 设置世界出生点</h4>
+          <h3 id="语法-20" tabindex="-1"><a class="header-anchor" href="#语法-20" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/setworldspawn &lt;x y z&gt;</code></p>
+          <h3 id="命令举例-19" tabindex="-1"><a class="header-anchor" href="#命令举例-19" aria-hidden="true">#</a> 命令举例</h3>
+          <p>设置出生点在坐标0 0 0位置</p>
+          <p><code>/setworldspawn 0 0 0</code></p>
+          <h3 id="小知识-5" tabindex="-1"><a class="header-anchor" href="#小知识-5" aria-hidden="true">#</a> 小知识</h3>
+          <p><strong>世界出生点所在区块为常加载区块</strong></p>
+          <hr>
+          <h2 id="spawnpoint" tabindex="-1"><a class="header-anchor" href="#spawnpoint" aria-hidden="true">#</a>
+            <code>/spawnpoint</code>
+          </h2>
+          <h3 id="命令解释-17" tabindex="-1"><a class="header-anchor" href="#命令解释-17" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="设置出生点" tabindex="-1"><a class="header-anchor" href="#设置出生点" aria-hidden="true">#</a> 设置出生点</h4>
+          <h3 id="语法-21" tabindex="-1"><a class="header-anchor" href="#语法-21" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/spawnpoint &lt;x y z&gt; &lt;玩家&gt;</code></p>
+          <h3 id="命令举例-20" tabindex="-1"><a class="header-anchor" href="#命令举例-20" aria-hidden="true">#</a> 命令举例</h3>
+          <p>设置自己的重生点在0 5 0位置<br><code>/spawnpoint 0 5 0</code><br> 设置全部玩家的重生点在0 5
+            0位置<br><code>/spawnpoint 0 5 0 @a</code></p>
+          <h3 id="小知识-6" tabindex="-1"><a class="header-anchor" href="#小知识-6" aria-hidden="true">#</a> 小知识</h3>
+          <p>设置重生点时，要注意脚底下不是下半砖，床等半格类型的方块</p>
+          <p>如果是上述的这些，一但在上面设置重生点就【你的重生点已遗失或被阻挡】</p>
+          <hr>
+          <h2 id="spreadplayers" tabindex="-1"><a class="header-anchor" href="#spreadplayers" aria-hidden="true">#</a>
+            <code>/spreadplayers</code>
+          </h2>
+          <h3 id="命令解释-18" tabindex="-1"><a class="header-anchor" href="#命令解释-18" aria-hidden="true">#</a> 命令解释</h3>
+          <h5 id="实体扩散" tabindex="-1"><a class="header-anchor" href="#实体扩散" aria-hidden="true">#</a> 实体扩散</h5>
+          <h3 id="语法-22" tabindex="-1"><a class="header-anchor" href="#语法-22" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/spreadplaysers &lt;x z&gt; &lt;扩散距离&gt; &lt;最远距离&gt; &lt;分组&gt; &lt;玩家&gt;</code></p>
+          <h3 id="名词解释-13" tabindex="-1"><a class="header-anchor" href="#名词解释-13" aria-hidden="true">#</a> 名词解释</h3>
+          <p>分组为选项<code>true|false</code></p>
+          <p>当分组为<code>true</code>时将会把相同队伍下的玩家在一个范围内随机扩散。</p>
+          <p>当分组为<code>false</code>是直接把玩家在一个范围内随机扩散，不分队伍。</p>
+          <h3 id="命令举例-21" tabindex="-1"><a class="header-anchor" href="#命令举例-21" aria-hidden="true">#</a> 命令举例</h3>
+          <p>把所有玩家在100 100位置中扩散，相隔1格最远4格</p>
+          <p><code>/spreadplayers 100 100 1 4 false @a </code></p>
+          <hr>
+          <h2 id="time" tabindex="-1"><a class="header-anchor" href="#time" aria-hidden="true">#</a> <code>/time</code>
+          </h2>
+          <h3 id="命令解释-19" tabindex="-1"><a class="header-anchor" href="#命令解释-19" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="设置世界时间" tabindex="-1"><a class="header-anchor" href="#设置世界时间" aria-hidden="true">#</a> 设置世界时间</h4>
+          <h3 id="语法-23" tabindex="-1"><a class="header-anchor" href="#语法-23" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/time &lt;set|add|query&gt; &lt;选项|数值&gt; &lt;数值&gt;</code></p>
+          <p><code>/time set &lt;数值|day|night&gt;</code></p>
+          <p><code>/time add &lt;数值&gt; </code></p>
+          <p><code>/time query &lt;day|daytime|gametime&gt;</code></p>
+          <h3 id="名词解释-14" tabindex="-1"><a class="header-anchor" href="#名词解释-14" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:center;">属性名</th>
+                <th style="text-align:center;">附属属性名</th>
+                <th style="text-align:center;">说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;">set</td>
+                <td style="text-align:center;">day|night</td>
+                <td style="text-align:center;">设置 白天|夜晚</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">add</td>
+                <td style="text-align:center;">无</td>
+                <td style="text-align:center;">增加时间刻</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">query</td>
+                <td style="text-align:center;">day|daytime|gametime</td>
+                <td style="text-align:center;">读取游戏刻(tick) 世界时间|总时间|游戏时间|</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-22" tabindex="-1"><a class="header-anchor" href="#命令举例-22" aria-hidden="true">#</a> 命令举例</h3>
+          <p>设置时间为白天</p>
+          <p><code>/time set day</code></p>
+          <p><code>/time set 0</code></p>
+          <p>读取世界时间</p>
+          <p><code>/time query day</code></p>
+          <hr>
+          <h2 id="tp" tabindex="-1"><a class="header-anchor" href="#tp" aria-hidden="true">#</a> <code>/tp</code></h2>
+          <h3 id="命令解释-20" tabindex="-1"><a class="header-anchor" href="#命令解释-20" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="传送" tabindex="-1"><a class="header-anchor" href="#传送" aria-hidden="true">#</a> 传送</h4>
+          <h3 id="语法-24" tabindex="-1"><a class="header-anchor" href="#语法-24" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/tp &lt;玩家&gt; &lt;玩家2&gt;</code></p>
+          <p><code>/tp &lt;玩家&gt; &lt;x y z&gt; &lt;rx&gt; &lt;ry&gt;</code></p>
+          <h3 id="名词解释-15" tabindex="-1"><a class="header-anchor" href="#名词解释-15" aria-hidden="true">#</a> 名词解释</h3>
+          <p>水平朝向与垂直朝向</p>
+          <p>在游戏中按下<code>F3</code>会显示一些信息，一般在第10行，找到</p>
+          <p><code>Facing: south(Towards positive Z) (RX/RY)</code></p>
+          <p>在第三/最后一个括号中，左边的数字是【水平/横向朝向】，右边的数字是【垂直/纵向朝向】</p>
+          <h3 id="命令举例-23" tabindex="-1"><a class="header-anchor" href="#命令举例-23" aria-hidden="true">#</a> 命令举例</h3>
+          <p>tp一名玩家到另一名玩家</p>
+          <p><code>/tp Y_DaDa Y_DanBai</code></p>
+          <p>tp一名玩家到坐标0 0 0位置</p>
+          <p><code>/tp Y_DaDa 0 0 0 </code></p>
+          <p>tp全部玩家到坐标0 5 0位置</p>
+          <p><code>/tp @a 0 5 0</code></p>
+          <hr>
+          <h2 id="weather" tabindex="-1"><a class="header-anchor" href="#weather" aria-hidden="true">#</a>
+            <code>/weather</code>
+          </h2>
+          <h3 id="命令解释-21" tabindex="-1"><a class="header-anchor" href="#命令解释-21" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="设置世界天气" tabindex="-1"><a class="header-anchor" href="#设置世界天气" aria-hidden="true">#</a> 设置世界天气</h4>
+          <h3 id="语法-25" tabindex="-1"><a class="header-anchor" href="#语法-25" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/weather &lt;clear&gt;</code></p>
+          <p><code>/weather &lt;rain|thunder&gt; &lt;游戏刻&gt;</code></p>
+          <h3 id="名称解释-2" tabindex="-1"><a class="header-anchor" href="#名称解释-2" aria-hidden="true">#</a> 名称解释</h3>
+          <p><strong>时间刻</strong>名为Tick，游戏20tick为1s</p>
+          <h3 id="命令举例-24" tabindex="-1"><a class="header-anchor" href="#命令举例-24" aria-hidden="true">#</a> 命令举例</h3>
+          <p>设置天气为晴天</p>
+          <p><code>/weather clear</code></p>
+          <p>设置天气为雨天</p>
+          <p><code>/weather rain</code></p>
+          <p>设置天气为20tick的暴雨</p>
+          <p><code>/weather thunder 20</code></p>
+          <hr>
+          <h2 id="worldborder" tabindex="-1"><a class="header-anchor" href="#worldborder" aria-hidden="true">#</a>
+            <code>/worldborder</code>
+          </h2>
+          <h3 id="命令解释-22" tabindex="-1"><a class="header-anchor" href="#命令解释-22" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="世界边界" tabindex="-1"><a class="header-anchor" href="#世界边界" aria-hidden="true">#</a> 世界边界</h4>
+          <h3 id="语法-26" tabindex="-1"><a class="header-anchor" href="#语法-26" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/worldborder &lt;add|ceter|damage|get|set|warning&gt; &lt;数值&gt; &lt;时间&gt;</code></p>
+          <h3 id="名词解释-16" tabindex="-1"><a class="header-anchor" href="#名词解释-16" aria-hidden="true">#</a> 名词解释</h3>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:center;">属性名</th>
+                <th style="text-align:center;">说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;">add</td>
+                <td style="text-align:center;">边界半径增加</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">center</td>
+                <td style="text-align:center;">边界中心点，使用坐标x,z</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">damage</td>
+                <td style="text-align:center;">走出边界的伤害</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">get</td>
+                <td style="text-align:center;">读取时间边界的宽度</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">set</td>
+                <td style="text-align:center;">数值边界半径</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;">warning</td>
+                <td style="text-align:center;">警告时间和距离</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="命令举例-25" tabindex="-1"><a class="header-anchor" href="#命令举例-25" aria-hidden="true">#</a> 命令举例</h3>
+          <p>设置边界半径为10</p>
+          <p><code>/worldborder set 10</code></p>
+          <p>设置边界半径为20时间10s</p>
+          <p><code>/worldborder set 20 10</code></p>
+          <p>设置边界中心点在坐标 1 0 位置（x z）</p>
+          <p><code>/worldborder center 1 0</code></p>
+          <hr>
+          <h2 id="xp" tabindex="-1"><a class="header-anchor" href="#xp" aria-hidden="true">#</a> <code>/xp</code></h2>
+          <h3 id="命令解释-23" tabindex="-1"><a class="header-anchor" href="#命令解释-23" aria-hidden="true">#</a> 命令解释</h3>
+          <h4 id="设置经验" tabindex="-1"><a class="header-anchor" href="#设置经验" aria-hidden="true">#</a> 设置经验</h4>
+          <h3 id="语法-27" tabindex="-1"><a class="header-anchor" href="#语法-27" aria-hidden="true">#</a> 语法</h3>
+          <p><code>/xp &lt;数值&gt; &lt;玩家&gt;</code></p>
+          <p><code>/xp &lt;正负数值&gt;&lt;l&gt; &lt;玩家&gt;</code></p>
+          <h3 id="名词解释-17" tabindex="-1"><a class="header-anchor" href="#名词解释-17" aria-hidden="true">#</a> 名词解释</h3>
+          <p>l全称level，译为等级。</p>
+          <h3 id="命令举例-26" tabindex="-1"><a class="header-anchor" href="#命令举例-26" aria-hidden="true">#</a> 命令举例</h3>
+          <p>给1点经验</p>
+          <p><code>/xp 1</code></p>
+          <p>给玩家1点经验</p>
+          <p><code>/xp 1 Y_DaDa</code></p>
+          <p>给玩家1级经验</p>
+          <p><code>/xp 1l Y_DaDa</code></p>
+          <p>移除玩家1级经验</p>
+          <p><code>/xp -1l Y_DaDa</code></p>
+          <h3 id="小知识-7" tabindex="-1"><a class="header-anchor" href="#小知识-7" aria-hidden="true">#</a> 小知识</h3>
+          <p>经验点数是不能用负数的，等级可以用负数来移除相应等级</p>
+          <h2 id="进阶" tabindex="-1"><a class="header-anchor" href="#进阶" aria-hidden="true">#</a> 进阶</h2>
+          <p>Q: 如何进阶？</p>
+          <p>A: 熟练掌握以上基础篇的指令后，觉得自己可以了，前往<a href="./advanced">高级篇</a>吧</p>
+          <p>高级篇中会详细介绍NBT的使用与更高级的指令用法</p>
+          <p>光看文档你觉得学不会，进入游戏实际上手操作一下，你立马就会觉得<code>好像也不是很难啊</code></p>
+        </div><!---->
+        <footer class="page-meta"><!---->
+          <div class="meta-item git-info"><!----><!----></div>
+        </footer><!----><!----><!----><!--]-->
+      </main><!--]-->
+      <footer class="footer-wrapper">
+        <div class="footer">© <a href="https://dbhg.top" target="_blank">蛋白后宫制图团</a> | By <a href="https://alwolf.cn"
+            target="_blank">一只屑阿狼</a></div>
+        <div class="copyright">Apache 2.0 协议, 版权所有</div>
+      </footer>
+    </div><!--]--><!----><!--]-->
+  </div>
+  <script type="module" src="/assets/app-45d29361.js" defer></script>
+</body>
+
+</html>
